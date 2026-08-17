@@ -138,6 +138,11 @@
         {
           "name": "deliveryStatus",
           "value": "delivered"
+        },
+        {
+          "name": "deliveryCommit",
+          "value": "50ea6d2",
+          "content": ".github/skills/mckinsey-5-step/SKILL.md; .github/insight-rules.instructions.md; .github/work-delegation-governance.instructions.md; .github/source-citation.instructions.md; docs/insights/agentic-engineering-现状和趋势.md; tests/acceptance/test-agentic-engineering-insight.js; design/KG/SystemArchitecture.json; design/KG/test-failure-records.json"
         }
       ]
     },
