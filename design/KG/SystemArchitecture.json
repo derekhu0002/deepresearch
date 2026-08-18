@@ -167,7 +167,18 @@
           "type": "Acceptance Test"
         }
       ],
-      "type": "Work Package"
+      "type": "Work Package",
+      "attributes": [
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
+        },
+        {
+          "content": "design/KG/SystemArchitecture.json; tests/acceptance/test-gpt-researcher-agent-model.js",
+          "name": "deliveryCommit",
+          "value": "75b3fdb"
+        }
+      ]
     },
     {
       "description": "gpt-researcher 的 Agent 行为模型根分组，挂载于 AgentCapabilities 视图（Implementation and Migration Viewpoint）。",
