@@ -185,7 +185,14 @@
       "id": "2010",
       "name": "gpt-researcher Agent 行为模型",
       "parent": "1249",
-      "type": "Grouping"
+      "type": "Grouping",
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "e82ef00",
+          "content": "scripts/extract-gpt-researcher-subgraph.js; design/KG/gpt-researcher-subgraph.json"
+        }
+      ]
     },
     {
       "description": "单智能体研究系统，源码位于 D:\\Projects\\gpt-researcher\\gpt_researcher\\。",
