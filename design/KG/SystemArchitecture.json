@@ -161,7 +161,7 @@
         },
         {
             "id": "1449",
-            "name": "多智能体协作系统",
+            "name": "多智能体协作系统研究方法",
             "parent": "2010",
             "type": "Business Process",
             "description": "多智能体协作系统（LangGraph），请进一步读取本元素下面的所有子图，包括子图中的元素和关系来了解详情。\r\n",
@@ -1046,13 +1046,13 @@
         },
         {
             "id": "1263",
-            "statement": "对金融投资的自动化工具进行洞察 --(Association)--> 多智能体协作系统",
+            "statement": "对金融投资的自动化工具进行洞察 --(Association)--> 多智能体协作系统研究方法",
             "name": "按该方法展开洞察",
             "type": "Association",
             "source_id": "1448",
             "target_id": "1449",
             "source_name": "对金融投资的自动化工具进行洞察",
-            "target_name": "多智能体协作系统"
+            "target_name": "多智能体协作系统研究方法"
         }
     ],
     "views": [
