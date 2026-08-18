@@ -166,6 +166,17 @@
           "Input": "docs/insights/金融投资自动化工具-洞察.md（洞察交付物）",
           "acceptanceCriteria": "tests/acceptance/test-financial-investment-automation-insight.js"
         }
+      ],
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "39125aa",
+          "description": "docs/insights/金融投资自动化工具-洞察.md; tests/acceptance/test-financial-investment-automation-insight.js; design/KG/SystemArchitecture.json"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
+        }
       ]
     },
     {
