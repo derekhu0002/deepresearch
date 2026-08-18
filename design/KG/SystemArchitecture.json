@@ -154,6 +154,12 @@
       "description": "来源需要明确时来自哪个URL链接以及原文段落\r\n"
     },
     {
+      "id": "1448",
+      "name": "对金融投资的自动化工具进行洞察",
+      "parent": "1249",
+      "type": "Work Package"
+    },
+    {
       "id": "2001",
       "name": "对 gpt-researcher 的 Agent 行为进行全量建模",
       "parent": "1249",
@@ -1037,6 +1043,16 @@
       "target_id": "2081",
       "source_name": "run_depth_research 章节深度研究",
       "target_name": "DraftState"
+    },
+    {
+      "id": "1262",
+      "statement": "对金融投资的自动化工具进行洞察 --(Association)--> 多智能体协作系统",
+      "name": "使用该洞察方法",
+      "type": "Association",
+      "source_id": "1448",
+      "target_id": "2012",
+      "source_name": "对金融投资的自动化工具进行洞察",
+      "target_name": "多智能体协作系统"
     }
   ],
   "views": [
@@ -1248,6 +1264,8 @@
       "parent_element_id": "1249",
       "parent_element_name": "Implementation and Migration Viewpoint",
       "included_elements": [
+        "1448",
+        "2012",
         "1327",
         "1328",
         "1314",
@@ -1255,7 +1273,8 @@
       ],
       "included_relationships": [
         "1176",
-        "1177"
+        "1177",
+        "1262"
       ]
     },
     {
