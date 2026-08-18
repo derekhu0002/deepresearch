@@ -160,6 +160,27 @@
             "type": "Work Package"
         },
         {
+            "id": "1449",
+            "name": "多智能体协作系统",
+            "parent": "2010",
+            "type": "Business Process",
+            "description": "多智能体协作系统（LangGraph），请进一步读取本元素下面的所有子图，包括子图中的元素和关系来了解详情。\r\n",
+            "subdiagram_views": [
+                {
+                    "view_id": "1766",
+                    "view_name": "多智能体数据与流程"
+                },
+                {
+                    "view_id": "1764",
+                    "view_name": "多智能体核心组件"
+                },
+                {
+                    "view_id": "1765",
+                    "view_name": "多智能体行为函数"
+                }
+            ]
+        },
+        {
             "id": "2001",
             "name": "对 gpt-researcher 的 Agent 行为进行全量建模",
             "parent": "1249",
@@ -218,27 +239,6 @@
                 {
                     "view_id": "1762",
                     "view_name": "单智能体行为函数"
-                }
-            ]
-        },
-        {
-            "id": "2012",
-            "name": "多智能体协作系统",
-            "parent": "2010",
-            "type": "Grouping",
-            "description": "多智能体协作系统（LangGraph），请进一步读取本元素下面的所有子图，包括子图中的元素和关系来了解详情。",
-            "subdiagram_views": [
-                {
-                    "view_id": "1766",
-                    "view_name": "多智能体数据与流程"
-                },
-                {
-                    "view_id": "1764",
-                    "view_name": "多智能体核心组件"
-                },
-                {
-                    "view_id": "1765",
-                    "view_name": "多智能体行为函数"
                 }
             ]
         },
@@ -1045,93 +1045,17 @@
             "target_name": "DraftState"
         },
         {
-            "id": "1262",
+            "id": "1263",
             "statement": "对金融投资的自动化工具进行洞察 --(Association)--> 多智能体协作系统",
-            "name": "使用该洞察方法",
+            "name": "按该方法展开洞察",
             "type": "Association",
             "source_id": "1448",
-            "target_id": "2012",
+            "target_id": "1449",
             "source_name": "对金融投资的自动化工具进行洞察",
             "target_name": "多智能体协作系统"
         }
     ],
     "views": [
-        {
-            "view_id": "1763",
-            "view_name": "单智能体数据与服务",
-            "parent_element_id": "2011",
-            "parent_element_name": "GPTResearcher 单智能体系统",
-            "included_elements": [
-                "2043",
-                "2044",
-                "2045",
-                "2046",
-                "2047",
-                "2020",
-                "2021",
-                "2040",
-                "2041",
-                "2042"
-            ],
-            "included_relationships": [
-                "1211",
-                "1212",
-                "1213"
-            ]
-        },
-        {
-            "view_id": "1761",
-            "view_name": "单智能体核心组件",
-            "parent_element_id": "2011",
-            "parent_element_name": "GPTResearcher 单智能体系统",
-            "included_elements": [
-                "2020",
-                "2021",
-                "2022",
-                "2023",
-                "2024",
-                "2025",
-                "2026",
-                "2027",
-                "2035"
-            ],
-            "included_relationships": [
-                "1205"
-            ]
-        },
-        {
-            "view_id": "1762",
-            "view_name": "单智能体行为函数",
-            "parent_element_id": "2011",
-            "parent_element_name": "GPTResearcher 单智能体系统",
-            "included_elements": [
-                "2030",
-                "2031",
-                "2032",
-                "2033",
-                "2034",
-                "2035",
-                "2036",
-                "2037",
-                "2047",
-                "2040",
-                "2041",
-                "2042",
-                "2043"
-            ],
-            "included_relationships": [
-                "1200",
-                "1201",
-                "1202",
-                "1203",
-                "1204",
-                "1206",
-                "1207",
-                "1208",
-                "1209",
-                "1210"
-            ]
-        },
         {
             "view_id": "1766",
             "view_name": "多智能体数据与流程",
@@ -1212,14 +1136,90 @@
             ]
         },
         {
+            "view_id": "1763",
+            "view_name": "单智能体数据与服务",
+            "parent_element_id": "2011",
+            "parent_element_name": "GPTResearcher 单智能体系统",
+            "included_elements": [
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2020",
+                "2021",
+                "2040",
+                "2041",
+                "2042"
+            ],
+            "included_relationships": [
+                "1211",
+                "1212",
+                "1213"
+            ]
+        },
+        {
+            "view_id": "1761",
+            "view_name": "单智能体核心组件",
+            "parent_element_id": "2011",
+            "parent_element_name": "GPTResearcher 单智能体系统",
+            "included_elements": [
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2035"
+            ],
+            "included_relationships": [
+                "1205"
+            ]
+        },
+        {
+            "view_id": "1762",
+            "view_name": "单智能体行为函数",
+            "parent_element_id": "2011",
+            "parent_element_name": "GPTResearcher 单智能体系统",
+            "included_elements": [
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2047",
+                "2040",
+                "2041",
+                "2042",
+                "2043"
+            ],
+            "included_relationships": [
+                "1200",
+                "1201",
+                "1202",
+                "1203",
+                "1204",
+                "1206",
+                "1207",
+                "1208",
+                "1209",
+                "1210"
+            ]
+        },
+        {
             "view_id": "176",
             "view_name": "AgentCapabilities",
             "parent_element_id": "1249",
             "parent_element_name": "Implementation and Migration Viewpoint",
             "included_elements": [
+                "1449",
                 "2010",
-                "2011",
-                "2012"
+                "2011"
             ],
             "included_relationships": []
         },
@@ -1265,7 +1265,7 @@
             "parent_element_name": "Implementation and Migration Viewpoint",
             "included_elements": [
                 "1448",
-                "2012",
+                "1449",
                 "1327",
                 "1328",
                 "1314",
@@ -1274,7 +1274,7 @@
             "included_relationships": [
                 "1176",
                 "1177",
-                "1262"
+                "1263"
             ]
         },
         {
