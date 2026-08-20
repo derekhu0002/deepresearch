@@ -680,6 +680,13 @@
           "Input": "docs/insights/自由生成游戏-程序化内容生成-洞察.md（洞察交付物）",
           "acceptanceCriteria": "tests/acceptance/test-procedural-generation-games-insight.js"
         }
+      ],
+      "attributes": [
+        {
+          "name": "wechatPublishCommit",
+          "value": "04c8c08",
+          "description": "docs/insights/自由生成游戏-程序化内容生成-洞察.wechat.md"
+        }
       ]
     }
   ],
