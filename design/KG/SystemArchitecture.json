@@ -665,6 +665,22 @@
           "description": "docs/insights/有声书-真人有感情朗读-洞察.wechat.md; docs/insights/有声书-有感情朗读-banner.png; tests/wechat-article.test.js"
         }
       ]
+    },
+    {
+      "id": "3000",
+      "name": "洞察自由生成的游戏（场景不固化）的现状与技术趋势",
+      "type": "Work Package",
+      "parent": "1249",
+      "description": "对「可以自由生成的游戏，场景不固化」——即程序化内容生成（PCG）驱动的游戏——进行证据支撑的洞察，按「技术栈×内容类型×产品形态」三个能力域展开取证，分析现状与技术趋势。",
+      "testcases": [
+        {
+          "name": "验收-洞察自由生成的游戏（场景不固化）的现状与技术趋势",
+          "description": "GIVEN 工作包「洞察自由生成的游戏（场景不固化）的现状与技术趋势」已被领取并产出洞察交付物 WHEN 验收方打开洞察交付物文档 docs/insights/自由生成游戏-程序化内容生成-洞察.md THEN 文档体现多智能体协作研究方法：包含编排声明(ChiefEditorAgent)与团队角色、≥3 章的章节大纲(EditorAgent)、≥3 个含来源的章节(ResearchAgent/WriterAgent)、评审与修订记录(ReviewerAgent/ReviserAgent)、事实核查记录(FactCheckerAgent)、≥1 个 Mermaid 图(VisualizerAgent)，且每个洞察结论给出 URL 与原文段落来源。",
+          "type": "Acceptance Test",
+          "Input": "docs/insights/自由生成游戏-程序化内容生成-洞察.md（洞察交付物）",
+          "acceptanceCriteria": "tests/acceptance/test-procedural-generation-games-insight.js"
+        }
+      ]
     }
   ],
   "relationships": [
@@ -1157,6 +1173,26 @@
       "target_id": "1328",
       "source_name": "洞察用户可定义的有声书与真人有感情朗读",
       "target_name": "所有洞察结论都必须给出论据来源"
+    },
+    {
+      "id": "3002",
+      "name": "遵守来源约束",
+      "statement": "洞察自由生成的游戏（场景不固化）的现状与技术趋势 --(Association)--> 所有洞察结论都必须给出论据来源",
+      "type": "Association",
+      "source_id": "3000",
+      "target_id": "1328",
+      "source_name": "洞察自由生成的游戏（场景不固化）的现状与技术趋势",
+      "target_name": "所有洞察结论都必须给出论据来源"
+    },
+    {
+      "id": "3003",
+      "name": "按该方法展开洞察",
+      "statement": "洞察自由生成的游戏（场景不固化）的现状与技术趋势 --(Association)--> 多智能体协作系统研究方法",
+      "type": "Association",
+      "source_id": "3000",
+      "target_id": "1449",
+      "source_name": "洞察自由生成的游戏（场景不固化）的现状与技术趋势",
+      "target_name": "多智能体协作系统研究方法"
     }
   ],
   "views": [
@@ -1375,7 +1411,8 @@
         "1328",
         "1314",
         "2001",
-        "2013"
+        "2013",
+        "3000"
       ],
       "included_relationships": [
         "1176",
@@ -1383,7 +1420,9 @@
         "1263",
         "1264",
         "1265",
-        "1266"
+        "1266",
+        "3002",
+        "3003"
       ]
     },
     {
