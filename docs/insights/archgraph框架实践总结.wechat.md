@@ -2,7 +2,7 @@
 title: "ArchGraph 框架实践：从一次「自由生成游戏」研究任务看意图驱动的 AI 工作流"
 author: "derek"
 digest: "当 AI Agent 接到一个研究任务，它如何从意图出发，通过图谱驱动、多智能体协作、验收测试，最终交付一份完整的洞察报告并发布到公众号？ArchGraph 框架给出了答案。"
-banner_path: ""
+banner_path: "archgraph框架实践总结-banner.png"
 open_comment: 1
 ---
 
@@ -27,6 +27,8 @@ open_comment: 1
 
 这些问题，传统 AI 工作流无法回答。
 
+![ArchGraph vs 传统 AI 工作流](images/archgraph-value.png)
+
 **ArchGraph 框架**试图解决这个问题。
 
 ## 二、ArchGraph 是什么
@@ -44,6 +46,8 @@ ArchGraph 是一个**意图驱动的 AI 工作流框架**。它的核心理念�
 | **提交即注册** | 交付后注册回图谱，闭环追踪 |
 
 ### 技术架构
+
+![ArchGraph 整体架构](images/archgraph-overview.png)
 
 ```
 用户层 → 意图图谱层 → Agent 层 → 交付物层
@@ -106,6 +110,8 @@ browser(initial_research)
 | VisualizerAgent | 生成 Mermaid 图 / PNG 配图 |
 | PublisherAgent | 发布最终交付物 |
 
+![多智能体协作工作流](images/archgraph-workflow.png)
+
 **执行结果：**
 
 - EditorAgent 规划了 5 章大纲（技术栈底层→中层→趋势 × 产品形态 MECE 拆解）
@@ -128,6 +134,8 @@ node tests/acceptance/test-procedural-generation-games-insight.js
 ```
 
 10 项检查全部通过：
+
+![验收测试驱动](images/archgraph-acceptance.png)
 
 - ✅ 文档存在
 - ✅ 工作包存在
@@ -156,6 +164,8 @@ node tests/acceptance/test-procedural-generation-games-insight.js
 ### 4.1 意图可追溯
 
 这次任务的完整链路：
+
+![意图驱动闭环](images/archgraph-intent-loop.png)
 
 ```
 用户提问
