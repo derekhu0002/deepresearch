@@ -71,7 +71,7 @@ async function genArchGraphCoreDiagram() {
     ${svgText(500, 32, 'ArchGraph：一张图谱，统一 Harness 设计与产品设计', 20, '#4fc3f7', 'middle', 'bold')}
     
     <!-- ===== TOP: Commander & Advisors ===== -->
-    ${svgText(500, 65, '指挥官 &amp; 参谋层（审计图谱质量）', 13, '#ffcc80', 'middle', 'bold')}
+    ${svgText(500, 65, '指挥官 &amp; 参谋层（审计图谱本身的质量）', 13, '#ffcc80', 'middle', 'bold')}
     
     <!-- Human Commander -->
     ${svgRect(380, 78, 240, 70, '#1565c0', 12, '#42a5f5', 2)}
@@ -79,26 +79,20 @@ async function genArchGraphCoreDiagram() {
     ${svgText(500, 100, '人类指挥官', 15, '#fff', 'middle', 'bold')}
     ${svgText(500, 120, '定义意图 · 验收决策 · 最终裁定', 11, '#bbdefb', 'middle')}
     
-    <!-- Advisor Agents - Graph Auditors -->
+    <!-- Advisor Agents - ONLY Graph Auditors -->
     ${svgRect(40, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
     ${svgRobotIcon(75, 113, 35, '#ef9a9a')}
-    ${svgText(145, 100, '图谱语义审计员', 12, '#fff', 'middle')}
+    ${svgText(145, 100, '图谱语义审计', 12, '#fff', 'middle')}
     ${svgText(145, 118, 'Derek', 10, '#ffcdd2', 'middle')}
     
     ${svgRect(210, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
     ${svgRobotIcon(245, 113, 35, '#ef9a9a')}
-    ${svgText(315, 100, '图谱语法审计员', 12, '#fff', 'middle')}
+    ${svgText(315, 100, '图谱语法审计', 12, '#fff', 'middle')}
     ${svgText(315, 118, 'John', 10, '#ffcdd2', 'middle')}
     
-    ${svgRect(630, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
-    ${svgRobotIcon(665, 113, 35, '#ef9a9a')}
-    ${svgText(735, 100, '代码检视员', 12, '#fff', 'middle')}
-    ${svgText(735, 118, 'adam', 10, '#ffcdd2', 'middle')}
-    
-    ${svgRect(800, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
-    ${svgRobotIcon(835, 113, 35, '#ef9a9a')}
-    ${svgText(905, 100, '测试验证员', 12, '#fff', 'middle')}
-    ${svgText(905, 118, 'chenlin', 10, '#ffcdd2', 'middle')}
+    ${svgText(830, 95, '审计图谱语义', 11, '#ef9a9a', 'middle')}
+    ${svgText(830, 115, '合理性 &amp; 一致性', 11, '#ef9a9a', 'middle')}
+    ${svgText(830, 135, '不执行具体任务', 11, '#ffcdd2', 'middle')}
     
     <!-- Arrows from top to center -->
     ${svgArrow(500, 148, 500, 195, '#ffcc80', 2)}
@@ -177,47 +171,53 @@ async function genArchGraphCoreDiagram() {
     ${svgText(500, 565, '执行层（士兵）', 13, '#a5d6a7', 'middle', 'bold')}
     
     <!-- Worker agents -->
-    ${svgRect(40, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(70, 615, 32, '#69f0ae')}
-    ${svgText(125, 605, 'Developer', 11, '#fff', 'middle', 'bold')}
-    ${svgText(125, 623, 'Xiaoming', 9, '#c8e6c9', 'middle')}
-    ${svgText(100, 643, '编码 · 自测', 9, '#a5d6a7', 'middle')}
+    ${svgRect(40, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(65, 615, 30, '#69f0ae')}
+    ${svgText(118, 605, 'Developer', 10, '#fff', 'middle', 'bold')}
+    ${svgText(118, 623, 'Xiaoming', 8, '#c8e6c9', 'middle')}
+    ${svgText(92, 643, '编码 · 自测', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(170, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(200, 615, 32, '#69f0ae')}
-    ${svgText(255, 605, '产品经理', 11, '#fff', 'middle', 'bold')}
-    ${svgText(255, 623, 'xiaoniu', 9, '#c8e6c9', 'middle')}
-    ${svgText(230, 643, '需求分析', 9, '#a5d6a7', 'middle')}
+    ${svgRect(155, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(180, 615, 30, '#69f0ae')}
+    ${svgText(233, 605, '产品经理', 10, '#fff', 'middle', 'bold')}
+    ${svgText(233, 623, 'xiaoniu', 8, '#c8e6c9', 'middle')}
+    ${svgText(207, 643, '需求分析', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(300, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(330, 615, 32, '#69f0ae')}
-    ${svgText(385, 605, '架构师', 11, '#fff', 'middle', 'bold')}
-    ${svgText(385, 623, 'laodong', 9, '#c8e6c9', 'middle')}
-    ${svgText(360, 643, '方案设计', 9, '#a5d6a7', 'middle')}
+    ${svgRect(270, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(295, 615, 30, '#69f0ae')}
+    ${svgText(348, 605, '架构师', 10, '#fff', 'middle', 'bold')}
+    ${svgText(348, 623, 'laodong', 8, '#c8e6c9', 'middle')}
+    ${svgText(322, 643, '方案设计', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(430, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(460, 615, 32, '#69f0ae')}
-    ${svgText(515, 605, '设计师', 11, '#fff', 'middle', 'bold')}
-    ${svgText(515, 623, 'caoyang', 9, '#c8e6c9', 'middle')}
-    ${svgText(490, 643, 'UI/UX', 9, '#a5d6a7', 'middle')}
+    ${svgRect(385, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(410, 615, 30, '#69f0ae')}
+    ${svgText(463, 605, '代码检视', 10, '#fff', 'middle', 'bold')}
+    ${svgText(463, 623, 'adam', 8, '#c8e6c9', 'middle')}
+    ${svgText(437, 643, '代码审查', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(560, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(590, 615, 32, '#69f0ae')}
-    ${svgText(645, 605, '发布员', 11, '#fff', 'middle', 'bold')}
-    ${svgText(645, 623, 'publisher', 9, '#c8e6c9', 'middle')}
-    ${svgText(620, 643, '公众号发布', 9, '#a5d6a7', 'middle')}
+    ${svgRect(500, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(525, 615, 30, '#69f0ae')}
+    ${svgText(578, 605, '测试验证', 10, '#fff', 'middle', 'bold')}
+    ${svgText(578, 623, 'chenlin', 8, '#c8e6c9', 'middle')}
+    ${svgText(552, 643, '验收测试', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(690, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(720, 615, 32, '#69f0ae')}
-    ${svgText(775, 605, '新 Agent', 11, '#fff', 'middle', 'bold')}
-    ${svgText(775, 623, '从零开始', 9, '#c8e6c9', 'middle')}
-    ${svgText(750, 643, '探索图谱', 9, '#a5d6a7', 'middle')}
+    ${svgRect(615, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(640, 615, 30, '#69f0ae')}
+    ${svgText(693, 605, '发布员', 10, '#fff', 'middle', 'bold')}
+    ${svgText(693, 623, 'publisher', 8, '#c8e6c9', 'middle')}
+    ${svgText(667, 643, '公众号发布', 8, '#a5d6a7', 'middle')}
     
-    ${svgRect(820, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(855, 615, 32, '#69f0ae')}
-    ${svgText(920, 605, '规划专家', 11, '#fff', 'middle', 'bold')}
-    ${svgText(920, 623, 'tanwen', 9, '#c8e6c9', 'middle')}
-    ${svgText(895, 643, '技术洞察', 9, '#a5d6a7', 'middle')}
+    ${svgRect(730, 580, 105, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(755, 615, 30, '#69f0ae')}
+    ${svgText(808, 605, '新 Agent', 10, '#fff', 'middle', 'bold')}
+    ${svgText(808, 623, '从零开始', 8, '#c8e6c9', 'middle')}
+    ${svgText(782, 643, '探索图谱', 8, '#a5d6a7', 'middle')}
+    
+    ${svgRect(845, 580, 115, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(875, 615, 30, '#69f0ae')}
+    ${svgText(930, 605, '规划专家', 10, '#fff', 'middle', 'bold')}
+    ${svgText(930, 623, 'tanwen', 8, '#c8e6c9', 'middle')}
+    ${svgText(902, 643, '技术洞察', 8, '#a5d6a7', 'middle')}
     
     <!-- Feedback loop arrows -->
     <path d="M 100 580 Q 100 555 200 520 Q 350 490 500 510" fill="none" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="4,3"/>
