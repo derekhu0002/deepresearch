@@ -37,6 +37,18 @@ ArchGraph 是一个**意图驱动的 AI 工作流框架**。它的核心理念�
 
 > 所有工作都从「意图」出发，通过一张**意图架构图谱**（Intent Architecture Graph）来驱动、追踪和验收。
 
+### 核心概念：一张图谱，统一 Harness 设计与产品设计
+
+![ArchGraph 核心概念](images/archgraph-core-concept.png)
+
+ArchGraph 最大的特点是将 **Agent Harness 设计**（Agent 如何工作）和**产品设计**（Agent 做什么）放进**同一张知识图谱**：
+
+- **上层：指挥官与参谋** — 人类用户定义意图、验收决策；其他 Agent（规划专家、架构师、Reviewer）作为参谋分析建议
+- **中层：知识图谱** — 单一事实来源，包含 Work Package、Skill、Rule、Business Actor、长期记忆等
+- **下层：执行层士兵** — Developer、测试工程师、设计师、发布员等 Worker Agent 照着图谱行动，并将经验写回图谱
+
+新 Agent 可以从「小白」开始，通过探索图谱知道自己要干什么、怎么干，干完后总结经验形成长期记忆。
+
 ### 三大支柱
 
 | 支柱 | 含义 |
@@ -161,7 +173,21 @@ node tests/acceptance/test-procedural-generation-games-insight.js
 
 ## 四、ArchGraph 的核心价值
 
-### 4.1 意图可追溯
+### 4.1 Agent 从「小白」到「专家」的完整闭环
+
+![Agent 探索路径](images/archgraph-agent-journey.png)
+
+ArchGraph 让 Agent 具备自我进化的能力：
+
+1. **唤醒** — 识别自己是哪个 Business Actor，读取长期记忆
+2. **探索图谱** — 语义检索任务/技能/规则，理解「干什么」「怎么干」
+3. **自武装** — 加载 Skill 和 Rule，装配上下文
+4. **执行任务** — 领取 Work Package，按验收用例执行
+5. **提交注册** — git commit，回写 deliveryCommit 和 deliveryStatus
+6. **写入记忆** — 总结经验、记录踩坑/关键决策，写入 SubView 长期记忆
+7. **上报指挥官** — 人类审阅交付物，Advisor Agent 分析，反馈进入下一轮迭代
+
+### 4.2 意图可追溯
 
 这次任务的完整链路：
 
@@ -179,17 +205,17 @@ node tests/acceptance/test-procedural-generation-games-insight.js
 
 每一步都有据可查，每个交付物都锚定在图谱元素上，每个 commit 都注册回图谱。
 
-### 4.2 方法论可复用
+### 4.3 方法论可复用
 
 这次任务使用了图谱中已建模的「多智能体协作系统研究方法」（元素 1449），该方法源自 gpt-researcher 的 multi_agents 管线，已被完整建模到图谱中。
 
 **未来任何研究任务都可以直接复用这个方法论，无需重新定义。**
 
-### 4.3 验收可执行
+### 4.4 验收可执行
 
 ArchGraph 的验收测试不是描述性的，而是**可执行的**。每个测试都用 GIVEN-WHEN-THEN 格式编写，从验收方的外部视角定义，确保交付物满足业务语义。
 
-### 4.4 多智能体协作
+### 4.5 多智能体协作
 
 10 个 Agent 角色各司其职，从编排、研究、撰写、评审、事实核查到发布，形成了一条完整的自动化管线。每个角色的职责在图谱中有明确定义，工作流有明确的触发关系。
 
