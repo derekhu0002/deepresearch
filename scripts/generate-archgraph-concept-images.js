@@ -70,8 +70,8 @@ async function genArchGraphCoreDiagram() {
     <!-- Title -->
     ${svgText(500, 32, 'ArchGraph：一张图谱，统一 Harness 设计与产品设计', 20, '#4fc3f7', 'middle', 'bold')}
     
-    <!-- ===== TOP: Commanders &amp; Advisors ===== -->
-    ${svgText(500, 65, '指挥官 &amp; 参谋层', 13, '#ffcc80', 'middle', 'bold')}
+    <!-- ===== TOP: Commander & Advisors ===== -->
+    ${svgText(500, 65, '指挥官 &amp; 参谋层（审计图谱质量）', 13, '#ffcc80', 'middle', 'bold')}
     
     <!-- Human Commander -->
     ${svgRect(380, 78, 240, 70, '#1565c0', 12, '#42a5f5', 2)}
@@ -79,26 +79,26 @@ async function genArchGraphCoreDiagram() {
     ${svgText(500, 100, '人类指挥官', 15, '#fff', 'middle', 'bold')}
     ${svgText(500, 120, '定义意图 · 验收决策 · 最终裁定', 11, '#bbdefb', 'middle')}
     
-    <!-- Advisor Agents -->
-    ${svgRect(40, 78, 150, 70, '#4a148c', 10, '#7b1fa2', 1.5)}
-    ${svgRobotIcon(75, 113, 35, '#ce93d8')}
-    ${svgText(140, 100, '规划专家', 12, '#fff', 'middle')}
-    ${svgText(140, 118, 'tanwen', 10, '#e1bee7', 'middle')}
+    <!-- Advisor Agents - Graph Auditors -->
+    ${svgRect(40, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
+    ${svgRobotIcon(75, 113, 35, '#ef9a9a')}
+    ${svgText(145, 100, '图谱语义审计员', 12, '#fff', 'middle')}
+    ${svgText(145, 118, 'Derek', 10, '#ffcdd2', 'middle')}
     
-    ${svgRect(200, 78, 150, 70, '#4a148c', 10, '#7b1fa2', 1.5)}
-    ${svgRobotIcon(235, 113, 35, '#ce93d8')}
-    ${svgText(300, 100, '系统架构师', 12, '#fff', 'middle')}
-    ${svgText(300, 118, 'laodong', 10, '#e1bee7', 'middle')}
+    ${svgRect(210, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
+    ${svgRobotIcon(245, 113, 35, '#ef9a9a')}
+    ${svgText(315, 100, '图谱语法审计员', 12, '#fff', 'middle')}
+    ${svgText(315, 118, 'John', 10, '#ffcdd2', 'middle')}
     
-    ${svgRect(650, 78, 150, 70, '#4a148c', 10, '#7b1fa2', 1.5)}
-    ${svgRobotIcon(685, 113, 35, '#ce93d8')}
-    ${svgText(750, 100, 'Reviewer', 12, '#fff', 'middle')}
-    ${svgText(750, 118, 'adam', 10, '#e1bee7', 'middle')}
+    ${svgRect(630, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
+    ${svgRobotIcon(665, 113, 35, '#ef9a9a')}
+    ${svgText(735, 100, '代码检视员', 12, '#fff', 'middle')}
+    ${svgText(735, 118, 'adam', 10, '#ffcdd2', 'middle')}
     
-    ${svgRect(810, 78, 150, 70, '#4a148c', 10, '#7b1fa2', 1.5)}
-    ${svgRobotIcon(845, 113, 35, '#ce93d8')}
-    ${svgText(910, 100, '产品经理', 12, '#fff', 'middle')}
-    ${svgText(910, 118, 'xiaoniu', 10, '#e1bee7', 'middle')}
+    ${svgRect(800, 78, 160, 70, '#b71c1c', 10, '#e53935', 1.5)}
+    ${svgRobotIcon(835, 113, 35, '#ef9a9a')}
+    ${svgText(905, 100, '测试验证员', 12, '#fff', 'middle')}
+    ${svgText(905, 118, 'chenlin', 10, '#ffcdd2', 'middle')}
     
     <!-- Arrows from top to center -->
     ${svgArrow(500, 148, 500, 195, '#ffcc80', 2)}
@@ -177,39 +177,51 @@ async function genArchGraphCoreDiagram() {
     ${svgText(500, 565, '执行层（士兵）', 13, '#a5d6a7', 'middle', 'bold')}
     
     <!-- Worker agents -->
-    ${svgRect(40, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(75, 615, 35, '#69f0ae')}
-    ${svgText(135, 605, 'Developer', 12, '#fff', 'middle', 'bold')}
-    ${svgText(135, 623, 'Xiaoming', 10, '#c8e6c9', 'middle')}
-    ${svgText(110, 643, '编码 · 自测', 9, '#a5d6a7', 'middle')}
+    ${svgRect(40, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(70, 615, 32, '#69f0ae')}
+    ${svgText(125, 605, 'Developer', 11, '#fff', 'middle', 'bold')}
+    ${svgText(125, 623, 'Xiaoming', 9, '#c8e6c9', 'middle')}
+    ${svgText(100, 643, '编码 · 自测', 9, '#a5d6a7', 'middle')}
     
-    ${svgRect(200, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(235, 615, 35, '#69f0ae')}
-    ${svgText(295, 605, '测试工程师', 12, '#fff', 'middle', 'bold')}
-    ${svgText(295, 623, 'chenlin', 10, '#c8e6c9', 'middle')}
-    ${svgText(270, 643, '验收测试', 9, '#a5d6a7', 'middle')}
+    ${svgRect(170, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(200, 615, 32, '#69f0ae')}
+    ${svgText(255, 605, '产品经理', 11, '#fff', 'middle', 'bold')}
+    ${svgText(255, 623, 'xiaoniu', 9, '#c8e6c9', 'middle')}
+    ${svgText(230, 643, '需求分析', 9, '#a5d6a7', 'middle')}
     
-    ${svgRect(360, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(395, 615, 35, '#69f0ae')}
-    ${svgText(455, 605, '设计师', 12, '#fff', 'middle', 'bold')}
-    ${svgText(455, 623, 'caoyang', 10, '#c8e6c9', 'middle')}
-    ${svgText(430, 643, '方案设计', 9, '#a5d6a7', 'middle')}
+    ${svgRect(300, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(330, 615, 32, '#69f0ae')}
+    ${svgText(385, 605, '架构师', 11, '#fff', 'middle', 'bold')}
+    ${svgText(385, 623, 'laodong', 9, '#c8e6c9', 'middle')}
+    ${svgText(360, 643, '方案设计', 9, '#a5d6a7', 'middle')}
     
-    ${svgRect(520, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(555, 615, 35, '#69f0ae')}
-    ${svgText(615, 605, '发布员', 12, '#fff', 'middle', 'bold')}
-    ${svgText(615, 623, 'wechat-publisher', 9, '#c8e6c9', 'middle')}
-    ${svgText(590, 643, '公众号发布', 9, '#a5d6a7', 'middle')}
+    ${svgRect(430, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(460, 615, 32, '#69f0ae')}
+    ${svgText(515, 605, '设计师', 11, '#fff', 'middle', 'bold')}
+    ${svgText(515, 623, 'caoyang', 9, '#c8e6c9', 'middle')}
+    ${svgText(490, 643, 'UI/UX', 9, '#a5d6a7', 'middle')}
     
-    ${svgRect(680, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
-    ${svgRobotIcon(715, 615, 35, '#69f0ae')}
-    ${svgText(775, 605, '新 Agent', 12, '#fff', 'middle', 'bold')}
-    ${svgText(775, 623, '从零开始', 10, '#c8e6c9', 'middle')}
-    ${svgText(750, 643, '探索图谱 → 自武装', 9, '#a5d6a7', 'middle')}
+    ${svgRect(560, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(590, 615, 32, '#69f0ae')}
+    ${svgText(645, 605, '发布员', 11, '#fff', 'middle', 'bold')}
+    ${svgText(645, 623, 'publisher', 9, '#c8e6c9', 'middle')}
+    ${svgText(620, 643, '公众号发布', 9, '#a5d6a7', 'middle')}
+    
+    ${svgRect(690, 580, 120, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(720, 615, 32, '#69f0ae')}
+    ${svgText(775, 605, '新 Agent', 11, '#fff', 'middle', 'bold')}
+    ${svgText(775, 623, '从零开始', 9, '#c8e6c9', 'middle')}
+    ${svgText(750, 643, '探索图谱', 9, '#a5d6a7', 'middle')}
+    
+    ${svgRect(820, 580, 140, 70, '#1b5e20', 10, '#4caf50', 1.5)}
+    ${svgRobotIcon(855, 615, 32, '#69f0ae')}
+    ${svgText(920, 605, '规划专家', 11, '#fff', 'middle', 'bold')}
+    ${svgText(920, 623, 'tanwen', 9, '#c8e6c9', 'middle')}
+    ${svgText(895, 643, '技术洞察', 9, '#a5d6a7', 'middle')}
     
     <!-- Feedback loop arrows -->
-    <path d="M 110 580 Q 110 555 200 520 Q 350 490 500 510" fill="none" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <path d="M 890 580 Q 890 555 800 520 Q 650 490 500 510" fill="none" stroke="#ffcc80" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <path d="M 100 580 Q 100 555 200 520 Q 350 490 500 510" fill="none" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <path d="M 960 580 Q 960 555 800 520 Q 650 490 500 510" fill="none" stroke="#ffcc80" stroke-width="1.5" stroke-dasharray="4,3"/>
     
     <!-- Bottom legend -->
     ${svgRect(40, 670, 920, 65, '#0d1b2a', 10)}
@@ -220,10 +232,10 @@ async function genArchGraphCoreDiagram() {
     ${svgText(220, 716, '执行（Agent 行动）', 10, '#90caf9', 'start')}
     ${svgRect(360, 705, 12, 12, '#ffcc80', 2)}
     ${svgText(380, 716, '写回（经验 → 长期记忆）', 10, '#90caf9', 'start')}
-    ${svgRect(560, 705, 12, 12, '#ce93d8', 2)}
-    ${svgText(580, 716, '指挥官/参谋（人类 + Advisor Agent）', 10, '#90caf9', 'start')}
-    ${svgRect(800, 705, 12, 12, '#69f0ae', 2)}
-    ${svgText(820, 716, '士兵（Worker Agent）', 10, '#90caf9', 'start')}
+    ${svgRect(560, 705, 12, 12, '#ef9a9a', 2)}
+    ${svgText(580, 716, '参谋（图谱审计员）', 10, '#90caf9', 'start')}
+    ${svgRect(760, 705, 12, 12, '#69f0ae', 2)}
+    ${svgText(780, 716, '士兵（Worker Agent）', 10, '#90caf9', 'start')}
   </svg>`;
   await sharp(Buffer.from(svg)).png().toFile(path.join(outDir, 'archgraph-core-concept.png'));
   console.log('archgraph-core-concept done');
