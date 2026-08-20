@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d4a5c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d2a4a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 声波渐变 - 从清晰到断裂 -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#4ecdc4;stop-opacity:0.9" />
+      <stop offset="60%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <!-- 发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- 左侧：AI 朗读区域 -->
+  <g id="ai-side">
+    <!-- AI 图标 - 简化的机器人头部 -->
+    <circle cx="150" cy="200" r="60" fill="none" stroke="#4ecdc4" stroke-width="3" opacity="0.8"/>
+    <circle cx="135" cy="185" r="8" fill="#4ecdc4" opacity="0.9"/>
+    <circle cx="165" cy="185" r="8" fill="#4ecdc4" opacity="0.9"/>
+    <path d="M 130 215 Q 150 225 170 215" fill="none" stroke="#4ecdc4" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- 完美的声波线条 -->
+    <g filter="url(#glow)">
+      <path d="M 230 200 Q 240 180 250 200 T 270 200 T 290 200 T 310 200 T 330 200 T 350 200 T 370 200 T 390 200 T 410 200 T 430 200 T 450 200 T 470 200" 
+            fill="none" stroke="#4ecdc4" stroke-width="2.5" opacity="0.9"/>
+      <path d="M 230 200 Q 240 220 250 200 T 270 200 T 290 200 T 310 200 T 330 200 T 350 200 T 370 200 T 390 200 T 410 200 T 430 200 T 450 200 T 470 200" 
+            fill="none" stroke="#4ecdc4" stroke-width="2.5" opacity="0.7"/>
+    </g>
+    
+    <!-- 标注 -->
+    <text x="150" y="300" font-family="Arial, sans-serif" font-size="18" fill="#4ecdc4" text-anchor="middle" opacity="0.9">音色 ✓</text>
+    <text x="150" y="325" font-family="Arial, sans-serif" font-size="16" fill="#4ecdc4" text-anchor="middle" opacity="0.7">自然度 ✓</text>
+  </g>
+  
+  <!-- 中间：过渡区域 -->
+  <g id="transition">
+    <!-- 垂直分隔线 -->
+    <line x1="600" y1="100" x2="600" y2="300" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+    
+    <!-- 断裂的桥梁 -->
+    <path d="M 500 200 L 580 200" fill="none" stroke="url(#waveGradient)" stroke-width="2.5" opacity="0.8"/>
+    <path d="M 620 200 L 700 200" fill="none" stroke="url(#waveGradient)" stroke-width="2.5" opacity="0.5"/>
+    
+    <!-- 断裂标记 -->
+    <text x="600" y="180" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.6">情感鸿沟</text>
+  </g>
+  
+  <!-- 右侧：人类情感区域 -->
+  <g id="human-side">
+    <!-- 心脏轮廓 -->
+    <path d="M 1050 180 C 1050 160 1030 150 1020 160 C 1010 150 990 160 990 180 C 990 200 1020 230 1020 230 C 1020 230 1050 200 1050 180 Z" 
+          fill="none" stroke="#ff6b6b" stroke-width="3" opacity="0.6"/>
+    
+    <!-- 断裂、不规则的声波 -->
+    <g opacity="0.5">
+      <path d="M 730 200 Q 740 185 750 200 T 770 200" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
+      <path d="M 790 200 Q 800 215 810 200" fill="none" stroke="#ff6b6b" stroke-width="2.5" opacity="0.7"/>
+      <path d="M 830 200 Q 840 190 850 200" fill="none" stroke="#ff6b6b" stroke-width="2" opacity="0.5"/>
+      <path d="M 870 200 L 890 200" fill="none" stroke="#ff6b6b" stroke-width="1.5" opacity="0.4"/>
+      <path d="M 910 200 L 930 200" fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <!-- 标注 -->
+    <text x="1020" y="280" font-family="Arial, sans-serif" font-size="18" fill="#ff6b6b" text-anchor="middle" opacity="0.8">情感 ✗</text>
+    <text x="1020" y="305" font-family="Arial, sans-serif" font-size="16" fill="#ff6b6b" text-anchor="middle" opacity="0.6">仍需人工标注</text>
+  </g>
+  
+  <!-- 底部标题 -->
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold" opacity="0.9">
+    AI 朗读的最后一公里
+  </text>
+</svg>

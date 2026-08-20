@@ -684,8 +684,12 @@
       "attributes": [
         {
           "name": "wechatPublishCommit",
-          "value": "3e4ce3c",
+          "value": "3ac2a81",
           "description": "docs/insights/自由生成游戏-程序化内容生成-洞察.wechat.md"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
         }
       ]
     }
