@@ -692,6 +692,28 @@
           "value": "delivered"
         }
       ]
+    },
+    {
+      "id": "3001",
+      "name": "market-research",
+      "parent": "1249",
+      "type": "Skill",
+      "description": "market-research 市场研究技能（来源 D:/Projects/Argo/.cursor/skills/market-research/SKILL.md）：为业务决策提供市场研究、竞争分析、投资人与基金尽职调查、行业情报。研究标准：①重要结论必须给出来源；②优先采用近期数据并标注过时数据（时效）；③纳入反面证据与下行风险；④将发现转化为决策而非仅作摘要；⑤明确区分事实、推断与建议。研究模式：投资人/基金尽职调查、竞争分析、市场规模估算(TAM/SAM/SOM)、技术/供应商研究。输出结构：执行摘要→关键发现→影响→风险与注意事项→建议→来源。质量门：所有数字须有来源或标注为估算、旧数据须标注、建议须由证据推导、包含风险与反方论证、输出须让决策更易做出。",
+      "attributes": [
+        {
+          "name": "source",
+          "value": "D:/Projects/Argo/.cursor/skills/market-research/SKILL.md"
+        }
+      ],
+      "testcases": [
+        {
+          "name": "验收-纳入market-research市场研究技能",
+          "description": "GIVEN 已将 D:/Projects/Argo/.cursor/skills/market-research/SKILL.md 纳入意图架构图谱 WHEN 验收方读取意图架构图谱 design/KG/SystemArchitecture.json THEN 图谱中存在类型为 Skill 的 market-research 元素，其描述涵盖研究标准(来源/时效/反面证据/决策导向/事实推断建议区分)与研究模式(投资人尽调/竞争分析/市场规模/技术供应商)并标注技能来源文件路径，该元素挂载于 AgentCapabilities 视图，且与「所有洞察结论都必须给出论据来源」约束存在 Association 关联。",
+          "type": "Acceptance Test",
+          "Input": "design/KG/SystemArchitecture.json（意图架构图谱）",
+          "acceptanceCriteria": "tests/acceptance/test-market-research-skill.js"
+        }
+      ]
     }
   ],
   "relationships": [
@@ -1204,6 +1226,16 @@
       "target_id": "1449",
       "source_name": "洞察自由生成的游戏（场景不固化）的现状与技术趋势",
       "target_name": "多智能体协作系统研究方法"
+    },
+    {
+      "id": "3004",
+      "statement": "market-research --(Association)--> 所有洞察结论都必须给出论据来源",
+      "name": "遵守来源约束",
+      "type": "Association",
+      "source_id": "3001",
+      "target_id": "1328",
+      "source_name": "market-research",
+      "target_name": "所有洞察结论都必须给出论据来源"
     }
   ],
   "views": [
@@ -1406,7 +1438,8 @@
         "1449",
         "2010",
         "2011",
-        "2012"
+        "2012",
+        "3001"
       ],
       "included_relationships": []
     },
@@ -1423,7 +1456,8 @@
         "1314",
         "2001",
         "2013",
-        "3000"
+        "3000",
+        "3001"
       ],
       "included_relationships": [
         "1176",
@@ -1433,7 +1467,8 @@
         "1265",
         "1266",
         "3002",
-        "3003"
+        "3003",
+        "3004"
       ]
     },
     {
