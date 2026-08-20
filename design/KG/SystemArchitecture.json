@@ -703,6 +703,11 @@
         {
           "name": "source",
           "value": "D:/Projects/Argo/.cursor/skills/market-research/SKILL.md"
+        },
+        {
+          "name": "commit",
+          "value": "3197578",
+          "description": "design/KG/SystemArchitecture.json; tests/acceptance/test-market-research-skill.js"
         }
       ],
       "testcases": [
