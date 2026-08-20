@@ -658,6 +658,11 @@
         {
           "name": "deliveryStatus",
           "value": "delivered"
+        },
+        {
+          "name": "wechatPublishCommit",
+          "value": "d706323",
+          "description": "docs/insights/有声书-真人有感情朗读-洞察.wechat.md; docs/insights/有声书-有感情朗读-banner.png; tests/wechat-article.test.js"
         }
       ]
     }
