@@ -172,3 +172,93 @@ test('PCG | 关键结论可追溯到源文档 URL', () => {
     assert.ok(body.includes(url), `正文应引用来源 URL：${url}`);
   }
 });
+
+/* ─────────────────────────────────────────────────────────────────────────────
+ * Acceptance test for WeChat article
+ * 「ArchGraph 框架实践：从一次「自由生成游戏」研究任务看意图驱动的 AI 工作流」
+ *
+ * GIVEN  公众号发布员把洞察报告《ArchGraph 框架实践总结》
+ *        （docs/insights/archgraph框架实践总结-洞察.md）改写为微信公众号文章
+ * WHEN   验收方打开 docs/insights/archgraph框架实践总结.wechat.md
+ * THEN   文章满足公众号发布的外部可观测语义：
+ *        1) YAML frontmatter 含 title / author / digest；
+ *        2) 正文忠实传达源文档核心结论（意图驱动 / 三大支柱 / 多智能体协作 /
+ *           验收测试驱动 / 提交即注册 / 从黑盒到白盒）；
+ *        3) 正文提及 10 个 Agent 角色及 LangGraph 工作流。
+ *
+ * 运行：node --test tests/wechat-article.test.js
+ * 退出码：0 = 通过；1 = 失败。仅依赖 Node 内置模块。
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+const ARCHGRAPH_ARTICLE_PATH = path.join(
+  repoRoot,
+  'docs',
+  'insights',
+  'archgraph框架实践总结.wechat.md'
+);
+
+function readArchgraphArticle() {
+  return fs.readFileSync(ARCHGRAPH_ARTICLE_PATH, 'utf8');
+}
+
+test('ArchGraph实践 | GIVEN-WHEN-THEN 验收：微信文章文件存在', () => {
+  assert.ok(fs.existsSync(ARCHGRAPH_ARTICLE_PATH), `应存在 ${ARCHGRAPH_ARTICLE_PATH}`);
+});
+
+test('ArchGraph实践 | frontmatter 含 title / author / digest', () => {
+  const text = readArchgraphArticle();
+  const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  assert.ok(fm, '应有 YAML frontmatter');
+  const frontmatter = fm[1];
+  for (const key of ['title', 'author', 'digest']) {
+    assert.match(
+      frontmatter,
+      new RegExp(`^${key}:\\s*.+`, 'm'),
+      `frontmatter 应含 ${key}`
+    );
+  }
+});
+
+test('ArchGraph实践 | 正文忠实传达源文档核心结论', () => {
+  const text = readArchgraphArticle();
+  const body = text.replace(/^---[\s\S]*?---/, '');
+
+  // 结论1：意图驱动
+  assert.match(body, /意图驱动|Intent\s*First|意图优先/, '应传达「意图驱动」核心理念');
+
+  // 结论2：三大支柱
+  assert.match(body, /意图优先/, '应提及「意图优先」支柱');
+  assert.match(body, /验收测试优先|验收.*优先/, '应提及「验收测试优先」支柱');
+  assert.match(body, /提交即注册|Commit.*Register/, '应提及「提交即注册」支柱');
+
+  // 结论3：多智能体协作
+  assert.match(body, /多智能体|Multi.?Agent|Agent.*角色/, '应传达「多智能体协作」');
+
+  // 结论4：验收测试驱动
+  assert.match(body, /GIVEN.*WHEN.*THEN|验收测试/, '应传达「验收测试驱动」');
+
+  // 结论5：从黑盒到白盒
+  assert.match(body, /黑盒.*白盒|白盒/, '应传达「从黑盒到白盒」核心价值');
+});
+
+test('ArchGraph实践 | 正文提及 Agent 角色与工作流', () => {
+  const text = readArchgraphArticle();
+  const body = text.replace(/^---[\s\S]*?---/, '');
+
+  // 10 个 Agent 角色至少提及部分
+  const agentRoles = [
+    'ChiefEditor', 'Editor', 'Research', 'Writer',
+    'Reviewer', 'FactChecker', 'Publisher', 'Human'
+  ];
+  let mentionedCount = 0;
+  for (const role of agentRoles) {
+    if (body.includes(role)) mentionedCount++;
+  }
+  assert.ok(mentionedCount >= 5, `应提及至少 5 个 Agent 角色（实际 ${mentionedCount} 个）`);
+
+  // LangGraph 工作流
+  assert.match(body, /LangGraph|工作流/, '应提及 LangGraph 工作流');
+
+  // 图谱元素引用
+  assert.match(body, /1449|3000/, '应引用图谱元素 id');
+});
