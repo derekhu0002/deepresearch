@@ -675,7 +675,7 @@
       "testcases": [
         {
           "name": "验收-洞察自由生成的游戏（场景不固化）的现状与技术趋势",
-          "description": "GIVEN 工作包「洞察自由生成的游戏（场景不固化）的现状与技术趋势」已被领取并产出洞察交付物 WHEN 验收方打开洞察交付物文档 docs/insights/自由生成游戏-程序化内容生成-洞察.md THEN 文档体现多智能体协作研究方法：包含编排声明(ChiefEditorAgent)与团队角色、≥3 章的章节大纲(EditorAgent)、≥3 个含来源的章节(ResearchAgent/WriterAgent)、评审与修订记录(ReviewerAgent/ReviserAgent)、事实核查记录(FactCheckerAgent)、≥1 个 Mermaid 图(VisualizerAgent)，且每个洞察结论给出 URL 与原文段落来源。",
+          "description": "GIVEN 工作包「洞察自由生成的游戏（场景不固化）的现状与技术趋势」已被领取并产出洞察交付物 WHEN 验收方打开洞察交付物文档 docs/insights/自由生成游戏-程序化内容生成-洞察.md THEN 文档包含≥3章洞察内容、≥1个Mermaid图、每个洞察结论给出URL链接与原文段落来源。",
           "type": "Acceptance Test",
           "Input": "docs/insights/自由生成游戏-程序化内容生成-洞察.md（洞察交付物）",
           "acceptanceCriteria": "tests/acceptance/test-procedural-generation-games-insight.js"
@@ -684,7 +684,7 @@
       "attributes": [
         {
           "name": "wechatPublishCommit",
-          "value": "04c8c08",
+          "value": "3e4ce3c",
           "description": "docs/insights/自由生成游戏-程序化内容生成-洞察.wechat.md"
         }
       ]
