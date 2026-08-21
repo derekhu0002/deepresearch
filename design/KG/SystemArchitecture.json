@@ -185,20 +185,7 @@
       "parent": "2010",
       "type": "Business Process",
       "description": "多智能体协作系统研究方法（LangGraph，源自 gpt-researcher multi_agents）：以多智能体协作团队组织洞察/研究——ChiefEditorAgent 编排（构建 LangGraph StateGraph）；EditorAgent 规划章节大纲（≥3 章）并并行执行章节研究；ResearchAgent 执行初始/深度研究采集带来源证据；WriterAgent 撰写章节；ReviewerAgent/ReviserAgent 评审与修订（循环至接受）；FactCheckerAgent 核查事实与幻觉；HumanAgent 人工在环评审计划；VisualizerAgent 生成 Mermaid 图；PublisherAgent 发布 Markdown 交付物。每个洞察结论必须给出 URL 链接与原文段落来源。",
-      "subdiagram_views": [
-        {
-          "view_id": "1766",
-          "view_name": "多智能体数据与流程"
-        },
-        {
-          "view_id": "1764",
-          "view_name": "多智能体核心组件"
-        },
-        {
-          "view_id": "1765",
-          "view_name": "多智能体行为函数"
-        }
-      ]
+      "subdiagram_views": []
     },
     {
       "id": "2001",
