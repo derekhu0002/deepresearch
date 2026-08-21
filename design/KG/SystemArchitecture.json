@@ -656,13 +656,13 @@
           "description": "docs/insights/有声书-真人有感情朗读-洞察.md; tests/acceptance/test-audiobook-emotional-tts-insight.js; design/KG/SystemArchitecture.json; design/KG/gpt-researcher_Agent_探索方法.json; design/KG/麦肯锡结构化战略分析新5步法.json"
         },
         {
-          "name": "deliveryStatus",
-          "value": "delivered"
-        },
-        {
           "name": "wechatPublishCommit",
           "value": "d706323",
           "description": "docs/insights/有声书-真人有感情朗读-洞察.wechat.md; docs/insights/有声书-有感情朗读-banner.png; tests/wechat-article.test.js"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
         }
       ]
     },
@@ -689,7 +689,7 @@
         },
         {
           "name": "deliveryStatus",
-          "value": "delivered"
+          "value": "not_delivered"
         }
       ]
     },
@@ -708,6 +708,10 @@
           "name": "commit",
           "value": "3197578",
           "description": "design/KG/SystemArchitecture.json; tests/acceptance/test-market-research-skill.js"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
         }
       ],
       "testcases": [

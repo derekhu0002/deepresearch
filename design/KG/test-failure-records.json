@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "testcasename": "验收-洞察自由生成的游戏（场景不固化）的现状与技术趋势",
+    "testdescription": "GIVEN 工作包「洞察自由生成的游戏（场景不固化）的现状与技术趋势」已被领取并产出洞察交付物 WHEN 验收方打开洞察交付物文档 docs/insights/自由生成游戏-程序化内容生成-洞察.md THEN 文档包含≥3章洞察内容、≥1个Mermaid图、每个洞察结论给出URL链接与原文段落来源。",
+    "acceptanceCriteria": "tests/acceptance/test-procedural-generation-games-insight.js",
+    "relatedIntentElementId": "3000",
+    "status": "failed",
+    "resolvedScriptPath": "tests/acceptance/test-procedural-generation-games-insight.js",
+    "executionCommand": "\"C:\\Program Files\\nodejs\\node.exe\" tests/acceptance/test-procedural-generation-games-insight.js",
+    "exitCode": 1,
+    "failureError": "FAIL  ≥1 个 Mermaid 图 — Mermaid 图数: 0\n[ACCEPT] FAIL — 1 处失败: ≥1 个 Mermaid 图",
+    "stdout": "[ACCEPT] deliverable: D:\\Projects\\deepresearch\\docs\\insights\\自由生成游戏-程序化内容生成-洞察.md\n  PASS  deliverable-document-exists\n  PASS  工作包存在\n  PASS  工作包挂载可执行验收用例\n  PASS  验收用例指向本测试文件\n  PASS  验收用例采用 GIVEN-WHEN-THEN 格式\n  PASS  ≥3 章\n  PASS  ≥3 个章节含来源（URL + 原文段落）\n  PASS  URL 来源数 ≥ 章节数\n  PASS  「原文段落」来源数 ≥ 章节数",
+    "stderr": "FAIL  ≥1 个 Mermaid 图 — Mermaid 图数: 0\n[ACCEPT] FAIL — 1 处失败: ≥1 个 Mermaid 图"
+  }
+]
