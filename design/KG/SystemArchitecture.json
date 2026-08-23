@@ -848,7 +848,13 @@
           "type": "Acceptance Test"
         }
       ],
-      "type": "Business Actor"
+      "type": "Business Actor",
+      "subdiagram_views": [
+        {
+          "view_id": "video-leader-memory-001",
+          "view_name": "视频制作Leader-长期记忆"
+        }
+      ]
     },
     {
       "attributes": [
@@ -885,6 +891,18 @@
       "name": "视频审核",
       "parent": "video-leader-001",
       "type": "Business Actor"
+    },
+    {
+      "id": "video-leader-memory-20260823-huan-yi-huan",
+      "name": "记忆-2026-08-23《换一换》生产验收",
+      "type": "Meaning",
+      "description": "会话摘要（video-leader-001）：1) 需求=亲子短剧《换一换》约3分钟，1080P 9:16 竖屏写实卡通，适用抖音/快手/视频号/小红书。2) 编排：按6场拆16段，全部 HappyHorse happyhorse-1.1-t2v 异步生成并下载至 docs/diagrams/huan-yi-huan/。3) 验收：qwen3-vl-plus 抽帧核对，13符合/3部分符合；S3-1、S4-1 返工1次后达标。4) 模型能力局限（复用经验）：T2V 无法渲染『镜中身高互换』『车窗倒影+真脸』『360环绕』等物理矛盾/高精度运镜，需后期合成；无 ffmpeg 故未拼接成片与配音。5) 产出：commit 0d6f008（16段MP4+00/01/02文档），已登记到 video-leader-001 元素 commit 属性（9c58ebb）。6) 待办：安装 ffmpeg 后按 00 号文档拼接、bl speech synthesize 配音、片尾字幕。",
+      "attributes": [
+        {
+          "name": "agent",
+          "value": "video-leader"
+        }
+      ]
     }
   ],
   "relationships": [
@@ -1781,6 +1799,16 @@
         "video-lead-producer-001",
         "video-lead-reviewer-001"
       ]
+    },
+    {
+      "view_id": "video-leader-memory-001",
+      "view_name": "视频制作Leader-长期记忆",
+      "parent_element_id": "video-leader-001",
+      "description": "视频制作Leader 的长期记忆子视图：记录历次视频制作需求编排、生产与验收的会话摘要。",
+      "included_elements": [
+        "video-leader-memory-20260823-huan-yi-huan"
+      ],
+      "included_relationships": []
     }
   ]
 }
