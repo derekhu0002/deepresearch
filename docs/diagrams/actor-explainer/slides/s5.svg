@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#5ee0a0"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">视频制作 · video-producer-001</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">实际生成视频 · 异步合成 + 立即转存</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">5 / 9</text>
+
+  <rect x="140" y="270" width="800" height="600" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="140" y="270" width="8" height="600" rx="4" fill="#5ee0a0"/>
+  <text x="170" y="328" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视频生成（Skill）</text>
+  
+  <circle cx="180" cy="380" r="7" fill="#5ee0a0"/>
+  <text x="202" y="390" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">dashscope-video-generator</text>
+  <circle cx="180" cy="450" r="7" fill="#5ee0a0"/>
+  <text x="202" y="460" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">模型：happyhorse-1.1-t2v / 万相 wan2.7-t2v</text>
+  <circle cx="180" cy="520" r="7" fill="#5ee0a0"/>
+  <text x="202" y="530" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">提交 video-synthesis 异步任务</text>
+  <circle cx="180" cy="590" r="7" fill="#5ee0a0"/>
+  <text x="202" y="600" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">轮询 task_id（约 15s 间隔）</text>
+  <circle cx="180" cy="660" r="7" fill="#5ee0a0"/>
+  <text x="202" y="670" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">SUCCEEDED → output.video_url 下载 MP4</text>
+
+
+  <rect x="980" y="270" width="800" height="600" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="980" y="270" width="8" height="600" rx="4" fill="#5ee0a0"/>
+  <text x="1010" y="328" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">关键约束</text>
+  
+  <circle cx="1020" cy="380" r="7" fill="#5ee0a0"/>
+  <text x="1042" y="390" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">视频链接 24 小时有效</text>
+  <circle cx="1020" cy="450" r="7" fill="#5ee0a0"/>
+  <text x="1042" y="460" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">须立即下载转存</text>
+  <circle cx="1020" cy="520" r="7" fill="#5ee0a0"/>
+  <text x="1042" y="530" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">输出至 docs/diagrams/</text>
+  <circle cx="1020" cy="590" r="7" fill="#5ee0a0"/>
+  <text x="1042" y="600" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">分辨率 / 宽高比按需求指定</text>
+  <rect x="1010" y="700" width="820" height="58" rx="29" fill="#5ee0a0" opacity="0.14" stroke="#5ee0a0" stroke-width="1.5"/>
+  <text x="1420" y="739" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#5ee0a0" text-anchor="middle">dashscope-video-generator</text>
+
+<text x="960" y="940" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9fb0cf" text-anchor="middle">视频制作团队 · 由视频制作Leader 指派执行生成 · 受视频审核抽帧把关</text>
+</svg>

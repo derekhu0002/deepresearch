@@ -907,6 +907,13 @@
           "value": "video-leader"
         }
       ]
+    },
+    {
+      "id": "actor-explainer-wp-001",
+      "name": "制作ACTOR讲解视频",
+      "type": "Work Package",
+      "parent": "1249",
+      "description": "对 ArchGraph 意图图谱中的 Business Actor 组织进行梳理：媒体艺术家、视频制作Leader、视频制作、视频审核四个 Actor 的能力、协作关系与被卷入的主要业务流程，并产出梳理文档与讲解视频交付物。"
     }
   ],
   "relationships": [
@@ -1731,7 +1738,8 @@
         "2001",
         "2013",
         "3000",
-        "3001"
+        "3001",
+        "actor-explainer-wp-001"
       ],
       "included_relationships": [
         "1176",

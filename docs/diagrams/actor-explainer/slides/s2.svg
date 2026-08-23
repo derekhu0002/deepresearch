@@ -1,0 +1,37 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#5b8cff"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">Agent 组织总览</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">AgentOrganization(1962) 下辖两个团队 · 共 4 个业务角色</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">2 / 9</text>
+<rect x="730" y="240" width="460" height="80" rx="14" fill="#5b8cff" opacity="0.12" stroke="#5b8cff" stroke-width="2.5"/>
+  <text x="960" y="292" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5b8cff" text-anchor="middle">AgentOrganization</text><text x="960" y="324" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">Grouping · 组织根分组</text>
+<line x1="860" y1="320" x2="415.7022824777603" y2="406.9278142978295" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="400,410 413.9741780202894,398.09528040408935 417.43038693523124,415.7603481915697" fill="#4e6a9c"/>
+<line x1="1060" y1="320" x2="1504.2977175222397" y2="406.9278142978295" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1520,410 1502.5696130647689,415.7603481915697 1506.0258219797106,398.09528040408935" fill="#4e6a9c"/>
+<rect x="200" y="410" width="400" height="90" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
+  <text x="400" y="467" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体创作团队</text><text x="400" y="499" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">media-team-001</text>
+<rect x="1320" y="410" width="400" height="90" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1520" y="467" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作团队</text><text x="1520" y="499" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">video-team-001</text>
+<line x1="400" y1="500" x2="400" y2="594" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="400,610 391,594 409,594" fill="#4e6a9c"/>
+<line x1="1520" y1="500" x2="1520" y2="594" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1520,610 1511,594 1529,594" fill="#4e6a9c"/>
+<rect x="200" y="610" width="400" height="90" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
+  <text x="400" y="667" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体艺术家</text><text x="400" y="699" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">media-artist-001</text>
+<rect x="1320" y="610" width="400" height="90" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1520" y="667" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作Leader</text><text x="1520" y="699" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">video-leader-001</text>
+<line x1="1430" y1="700" x2="1396.4982154568552" y2="775.3790152220759" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1390,790 1388.2739115192728,771.7237690275948 1404.7225193944375,779.0342614165569" fill="#4e6a9c"/>
+<line x1="1630" y1="700" x2="1718.1072936600453" y2="779.2965642940408" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1730,790 1712.0866110754432,785.9862116102653 1724.1279762446475,772.6069169778162" fill="#4e6a9c"/>
+<rect x="1240" y="790" width="300" height="80" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="1390" y="842" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">视频制作</text><text x="1390" y="874" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">video-producer-001</text>
+<rect x="1580" y="790" width="300" height="80" rx="14" fill="#ff7a9c" opacity="0.12" stroke="#ff7a9c" stroke-width="2.5"/>
+  <text x="1730" y="842" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ff7a9c" text-anchor="middle">视频审核</text><text x="1730" y="874" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">video-reviewer-001</text>
+</svg>

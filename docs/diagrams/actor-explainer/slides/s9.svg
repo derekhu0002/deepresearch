@@ -1,0 +1,22 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#5b8cff"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">总结</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">4 个业务角色 · 明确的能力边界与协作关系</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">9 / 9</text>
+<rect x="150" y="300" width="220" height="50" rx="10" fill="#7fd1ff" opacity="0.16" stroke="#7fd1ff" stroke-width="1.5"/>
+  <text x="260" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体艺术家</text>
+<rect x="620" y="300" width="390" height="50" rx="10" fill="#ffb547" opacity="0.16" stroke="#ffb547" stroke-width="1.5"/>
+  <text x="815" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作Leader</text>
+<rect x="1090" y="300" width="186" height="50" rx="10" fill="#5ee0a0" opacity="0.16" stroke="#5ee0a0" stroke-width="1.5"/>
+  <text x="1183" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#5ee0a0" text-anchor="middle">视频制作</text>
+<rect x="1560" y="300" width="186" height="50" rx="10" fill="#ff7a9c" opacity="0.16" stroke="#ff7a9c" stroke-width="1.5"/>
+  <text x="1653" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#ff7a9c" text-anchor="middle">视频审核</text>
+<text x="960" y="500" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="34" fill="#c7d2e8" text-anchor="middle">共同支撑 ArchGraph 的媒体与视频高效交付</text>
+<text x="960" y="620" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#9fb0cf" text-anchor="middle">梳理文档：docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md</text>
+<text x="960" y="760" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#7fd1ff" text-anchor="middle">谢谢观看</text>
+</svg>

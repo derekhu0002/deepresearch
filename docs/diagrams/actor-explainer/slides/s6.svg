@@ -1,0 +1,42 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#ff7a9c"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">视频审核 · video-reviewer-001</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">质量把关 · 抽帧 + 视觉模型逐条核对</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">6 / 9</text>
+
+  <rect x="200" y="280" width="760" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="200" y="280" width="8" height="560" rx="4" fill="#ff7a9c"/>
+  <text x="230" y="338" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">验收流程</text>
+  
+  <circle cx="240" cy="390" r="7" fill="#ff7a9c"/>
+  <text x="262" y="400" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">接收 Leader 指派的验收任务</text>
+  <circle cx="240" cy="460" r="7" fill="#ff7a9c"/>
+  <text x="262" y="470" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">读取需求提出者的原始要求</text>
+  <circle cx="240" cy="530" r="7" fill="#ff7a9c"/>
+  <text x="262" y="540" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">抽取生成视频的关键帧</text>
+  <circle cx="240" cy="600" r="7" fill="#ff7a9c"/>
+  <text x="262" y="610" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">qwen3-vl-plus 分析帧画面</text>
+
+
+  <rect x="1000" y="280" width="720" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="1000" y="280" width="8" height="560" rx="4" fill="#ff7a9c"/>
+  <text x="1030" y="338" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">核对维度</text>
+  
+  <circle cx="1040" cy="390" r="7" fill="#ff7a9c"/>
+  <text x="1062" y="400" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">画面元素完整性</text>
+  <circle cx="1040" cy="460" r="7" fill="#ff7a9c"/>
+  <text x="1062" y="470" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">内容是否符合需求主题</text>
+  <circle cx="1040" cy="530" r="7" fill="#ff7a9c"/>
+  <text x="1062" y="540" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">时长与分辨率是否达标</text>
+  <circle cx="1040" cy="600" r="7" fill="#ff7a9c"/>
+  <text x="1062" y="610" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">文字 / 标注是否准确无遮挡</text>
+
+<text x="960" y="900" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#ffc3d2" text-anchor="middle">输出「符合 / 不符合 + 依据」→ 供 Leader 决定交付或返工</text>
+<rect x="700" y="730" width="850" height="58" rx="29" fill="#ff7a9c" opacity="0.14" stroke="#ff7a9c" stroke-width="1.5"/>
+  <text x="1125" y="769" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#ff7a9c" text-anchor="middle">qwen3-vl-visual-inspection</text>
+</svg>

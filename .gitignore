@@ -4,3 +4,5 @@ node_modules/
 data/
 package-lock.json
 design/KG/SystemArchitecture.json.bak
+docs/diagrams/actor-explainer/clips/
+docs/diagrams/actor-explainer/review/
