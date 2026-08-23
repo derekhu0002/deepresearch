@@ -23,6 +23,14 @@ const path = require('path');
  * THEN  元素挂载 agent 属性（media-artist）且含 model、tools 与 agentPrompt 属性，
  *       agentPrompt 涵盖 text2image 端点、qwen-image 模型、qwen3-vl-plus 与 QWEN_KEY 约束。
  *
+ * AT-media-artist-03-视频生成能力就绪
+ * GIVEN 媒体艺术家需要完成视频生成任务
+ * WHEN  读取图谱中视频生成能力
+ * THEN  存在 dashscope-video-generator Skill（含 wan 文生视频接口 video-synthesis、
+ *       模型 wan2.7-t2v 等、异步轮询与 video_url 下载说明），
+ *       图片视频生成 Role 通过 Association 使用该 Skill，
+ *       且媒体艺术家 agentPrompt 含视频生成接口与模型约束。
+ *
  * 运行：node --test tests/media-artist-actor.test.js
  * 退出码：0 = 通过；1 = 失败。仅依赖 Node 内置模块。
  */
@@ -48,6 +56,7 @@ const actor = elements.find((e) => e.id === 'media-artist-001');
 const role = elements.find((e) => e.id === 'media-role-001');
 const skill = elements.find((e) => e.id === 'media-skill-001');
 const vlSkill = elements.find((e) => e.id === 'media-vl-skill-001');
+const videoSkill = elements.find((e) => e.id === 'media-video-skill-001');
 
 /* ── AT-media-artist-01-媒体艺术家角色就绪 ─────────────────────────────── */
 
@@ -111,12 +120,12 @@ test('AT-media-artist-01 | 全部元素与关系包含于「媒体创作团队�
   assert.equal(view.parent_element_id, '1962', '视图应挂载于 AgentOrganization(1962)');
 
   const memberIds = new Set(view.included_elements || []);
-  for (const id of ['media-artist-001', 'media-role-001', 'media-skill-001', 'media-vl-skill-001']) {
+  for (const id of ['media-artist-001', 'media-role-001', 'media-skill-001', 'media-vl-skill-001', 'media-video-skill-001']) {
     assert.ok(memberIds.has(id), `视图应包含元素 ${id}`);
   }
 
   const relIds = new Set(view.included_relationships || []);
-  for (const id of ['media-assign-001', 'media-use-skill-001', 'media-use-vl-001']) {
+  for (const id of ['media-assign-001', 'media-use-skill-001', 'media-use-vl-001', 'media-use-video-001']) {
     assert.ok(relIds.has(id), `视图应包含关系 ${id}`);
   }
 });
@@ -157,4 +166,35 @@ test('AT-media-artist-02 | agentPrompt 涵盖 text2image 端点、qwen-image 模
   assert.match(prompt, /qwen-image/, 'agentPrompt 应含 qwen-image 模型约束');
   assert.match(prompt, /qwen3-vl-plus/, 'agentPrompt 应含 qwen3-vl-plus 视觉验收');
   assert.match(prompt, /QWEN_KEY/, 'agentPrompt 应含 QWEN_KEY 凭据约束');
+});
+
+/* ── AT-media-artist-03-视频生成能力就绪 ──────────────────────────────── */
+
+test('AT-media-artist-03 | 存在 dashscope-video-generator Skill（video-synthesis + wan 模型 + 异步轮询 + video_url）', () => {
+  assert.ok(videoSkill, '应存在 media-video-skill-001 元素');
+  assert.equal(videoSkill.type, 'Skill');
+  assert.equal(videoSkill.name, 'dashscope-video-generator');
+  assert.equal(videoSkill.parent, '1249');
+  const desc = videoSkill.description || '';
+  assert.match(desc, /video-synthesis/, 'Skill 应含 video-synthesis 接口');
+  assert.match(desc, /wan2\.7-t2v/, 'Skill 应含 wan2.7-t2v 模型');
+  assert.match(desc, /X-DashScope-Async/, 'Skill 应含异步请求头说明');
+  assert.match(desc, /video_url/, 'Skill 应含 video_url 下载说明');
+  assert.match(desc, /QWEN_KEY/, 'Skill 应含凭据约束');
+});
+
+test('AT-media-artist-03 | 图片视频生成 Role 通过 Association 使用 dashscope-video-generator', () => {
+  const useVideo = relationships.find((r) => r.id === 'media-use-video-001');
+  assert.ok(useVideo, '应存在 media-use-video-001 关联');
+  assert.equal(useVideo.type, 'Association');
+  assert.equal(useVideo.source_id, 'media-role-001');
+  assert.equal(useVideo.target_id, 'media-video-skill-001');
+});
+
+test('AT-media-artist-03 | 媒体艺术家 agentPrompt 含视频生成接口与模型约束', () => {
+  const promptAttr = (actor.attributes || []).find((a) => a.name === 'agentPrompt');
+  assert.ok(promptAttr, '应含 agentPrompt 属性');
+  const prompt = promptAttr.value || '';
+  assert.match(prompt, /video-synthesis/, 'agentPrompt 应含视频生成接口');
+  assert.match(prompt, /wan2\.7-t2v/, 'agentPrompt 应含 wan 视频模型约束');
 });
