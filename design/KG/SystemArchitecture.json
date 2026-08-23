@@ -776,7 +776,7 @@
         },
         {
           "name": "commit",
-          "value": "a7c5635",
+          "value": "21a0248",
           "description": "design/KG/SystemArchitecture.json; tests/media-artist-actor.test.js"
         }
       ],
@@ -814,7 +814,14 @@
       "id": "media-video-skill-001",
       "name": "dashscope-video-generator",
       "parent": "1249",
-      "type": "Skill"
+      "type": "Skill",
+      "attributes": [
+        {
+          "name": "commit",
+          "value": "21a0248",
+          "description": "design/KG/SystemArchitecture.json; tests/media-artist-actor.test.js"
+        }
+      ]
     }
   ],
   "relationships": [
