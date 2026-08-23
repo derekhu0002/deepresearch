@@ -6,7 +6,7 @@
   <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">视频制作Leader · video-leader-001</text>
   <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">视频团队枢纽 · 统筹编排制作与验收</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">4 / 9</text>
 <rect x="730" y="230" width="460" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
   <text x="960" y="282" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">接收需求</text><text x="960" y="314" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">主题/时长/风格/用途/交付要求</text>

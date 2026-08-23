@@ -6,7 +6,7 @@
   <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">视频审核 · video-reviewer-001</text>
   <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">质量把关 · 抽帧 + 视觉模型逐条核对</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">6 / 9</text>
 
   <rect x="200" y="280" width="760" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>

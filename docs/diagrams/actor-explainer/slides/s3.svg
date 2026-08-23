@@ -6,7 +6,7 @@
   <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">媒体艺术家 · media-artist-001</text>
   <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">媒体创作团队 · 图片与视频的创作执行</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">3 / 9</text>
 
   <rect x="120" y="260" width="520" height="620" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>

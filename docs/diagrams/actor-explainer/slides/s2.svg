@@ -6,7 +6,7 @@
   <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">Agent 组织总览</text>
   <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">AgentOrganization(1962) 下辖两个团队 · 共 4 个业务角色</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">2 / 9</text>
 <rect x="730" y="240" width="460" height="80" rx="14" fill="#5b8cff" opacity="0.12" stroke="#5b8cff" stroke-width="2.5"/>
   <text x="960" y="292" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5b8cff" text-anchor="middle">AgentOrganization</text><text x="960" y="324" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">Grouping · 组织根分组</text>

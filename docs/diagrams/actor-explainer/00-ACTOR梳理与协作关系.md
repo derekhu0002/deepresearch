@@ -1,4 +1,4 @@
-# ArchGraph · Agent 组织与协作梳理
+# deepresearch · Agent 组织与协作梳理
 
 > 依据：意图架构图谱 `design/KG/SystemArchitecture.json`（`AgentOrganization`(1962) 挂载的组织结构）
 > 范围：`Business Actor` 及其能力（Skill）、协作关系、被卷入的主要业务流程
@@ -6,7 +6,7 @@
 
 ## 一、团队总览
 
-ArchGraph 的 Agent 组织根分组为 **AgentOrganization**(1962)，挂载于 Implementation and Migration Viewpoint(1249)，
+deepresearch 的 Agent 组织根分组为 **AgentOrganization**(1962)，挂载于 Implementation and Migration Viewpoint(1249)，
 下辖两个团队视图：**媒体创作团队**(media-team-001) 与 **视频制作团队**(video-team-001)。
 
 共登记 **4 个 Business Actor**：

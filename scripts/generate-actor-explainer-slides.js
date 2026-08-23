@@ -31,7 +31,7 @@ function header(title, subtitle, page, accent) {
   <text x="80" y="104" font-family="${FONT}" font-size="60" font-weight="bold" fill="#f2f6ff">${esc(title)}</text>
   <text x="82" y="162" font-family="${FONT}" font-size="28" fill="#9aa7bd">${esc(subtitle)}</text>
   <line x1="80" y1="196" x2="${W - 80}" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="${H - 38}" font-family="${FONT}" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="${H - 38}" font-family="${FONT}" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="${W - 100}" y="${H - 38}" font-family="${FONT}" font-size="22" fill="#5a6a85" text-anchor="end">${page} / 9</text>`;
 }
 
@@ -88,7 +88,7 @@ const slides = {};
 // S1 开场
 slides.s1 = `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-${header('ArchGraph · Agent 组织与协作', '4 个 Business Actor · 能力 · 协作关系 · 主要业务流程', 1, BLUE)}
+${header('deepresearch · Agent 组织与协作', '4 个 Business Actor · 能力 · 协作关系 · 主要业务流程', 1, BLUE)}
 <rect x="300" y="340" width="1320" height="200" rx="24" fill="#131b2e" stroke="#2a3a55" stroke-width="2"/>
 <text x="960" y="430" font-family="${FONT}" font-size="54" font-weight="bold" fill="#ffffff" text-anchor="middle">梳理我们注册的 ACTOR 团队</text>
 <text x="960" y="500" font-family="${FONT}" font-size="32" fill="#9fb0cf" text-anchor="middle">媒体艺术家  ·  视频制作Leader  ·  视频制作  ·  视频审核</text>
@@ -262,7 +262,7 @@ ${tag(150, 300, '媒体艺术家', LBLUE)}
 ${tag(620, 300, '视频制作Leader', AMBER)}
 ${tag(1090, 300, '视频制作', GREEN)}
 ${tag(1560, 300, '视频审核', PINK)}
-<text x="960" y="500" font-family="${FONT}" font-size="34" fill="#c7d2e8" text-anchor="middle">共同支撑 ArchGraph 的媒体与视频高效交付</text>
+<text x="960" y="500" font-family="${FONT}" font-size="34" fill="#c7d2e8" text-anchor="middle">共同支撑 deepresearch 的媒体与视频高效交付</text>
 <text x="960" y="620" font-family="${FONT}" font-size="30" fill="#9fb0cf" text-anchor="middle">梳理文档：docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md</text>
 <text x="960" y="760" font-family="${FONT}" font-size="60" font-weight="bold" fill="#7fd1ff" text-anchor="middle">谢谢观看</text>
 </svg>`;

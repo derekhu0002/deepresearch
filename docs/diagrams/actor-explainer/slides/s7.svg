@@ -6,7 +6,7 @@
   <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">协作关系</text>
   <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">Assignment 指派 · Aggregation 归属 · Association 使用</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
-  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">ArchGraph · Agent 组织与协作</text>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
   <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">7 / 9</text>
 <rect x="140" y="230" width="460" height="90" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
   <text x="370" y="287" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体艺术家</text><text x="370" y="319" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">media-artist-001</text>
