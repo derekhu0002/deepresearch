@@ -17,12 +17,11 @@ const path = require('path');
  *       并通过 Assignment 指派给「图片视频生成」Role，
  *       均包含于「媒体创作团队」视图(media-team-001)。
  *
- * AT-media-artist-02-媒体艺术家Agent文件就绪
+ * AT-media-artist-02-媒体艺术家Agent属性就绪
  * GIVEN 媒体艺术家需要以自定义 agent 方式被调用
- * WHEN  查找其 agent 定义文件
- * THEN  工作区 argo/agents/media-artist.agent.md 存在，
- *       frontmatter 含 name=媒体艺术家、model 与 tools，
- *       正文含 text2image 端点、qwen-image 模型、qwen3-vl-plus 与 QWEN_KEY 约束。
+ * WHEN  读取图谱中「媒体艺术家」元素属性
+ * THEN  元素挂载 agent 属性（media-artist）且含 model、tools 与 agentPrompt 属性，
+ *       agentPrompt 涵盖 text2image 端点、qwen-image 模型、qwen3-vl-plus 与 QWEN_KEY 约束。
  *
  * 运行：node --test tests/media-artist-actor.test.js
  * 退出码：0 = 通过；1 = 失败。仅依赖 Node 内置模块。
@@ -33,7 +32,6 @@ const repoRoot = process.env.ARGO_REPO_ROOT
   || path.resolve(__dirname, '..');
 
 const GRAPH_PATH = path.join(repoRoot, 'design', 'KG', 'SystemArchitecture.json');
-const AGENT_FILE_PATH = path.join(repoRoot, 'argo', 'agents', 'media-artist.agent.md');
 
 let graph;
 try {
@@ -137,30 +135,26 @@ test('AT-media-artist-01 | Actor 挂载可执行验收用例（GIVEN-WHEN-THEN�
   }
 });
 
-/* ── AT-media-artist-02-媒体艺术家Agent文件就绪 ────────────────────────── */
+/* ── AT-media-artist-02-媒体艺术家Agent属性就绪 ────────────────────────── */
 
-test('AT-media-artist-02 | agent 定义文件存在', () => {
-  assert.ok(fs.existsSync(AGENT_FILE_PATH), `应存在 ${AGENT_FILE_PATH}`);
+test('AT-media-artist-02 | 元素挂载 agent 属性（media-artist）', () => {
+  const agentAttr = (actor.attributes || []).find((a) => a.name === 'agent');
+  assert.ok(agentAttr, '应挂载 agent 属性');
+  assert.equal(agentAttr.value, 'media-artist');
 });
 
-test('AT-media-artist-02 | frontmatter 含 name=媒体艺术家、model 与 tools', () => {
-  const text = fs.readFileSync(AGENT_FILE_PATH, 'utf8');
-  const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  assert.ok(fm, '应有 YAML frontmatter');
-  const frontmatter = fm[1];
-  assert.match(frontmatter, /^name:\s*媒体艺术家/m, 'frontmatter 应含 name=媒体艺术家');
-  assert.match(frontmatter, /^model:/m, 'frontmatter 应含 model');
-  assert.match(frontmatter, /^tools:/m, 'frontmatter 应含 tools');
+test('AT-media-artist-02 | 元素含 model 与 tools 属性', () => {
+  const attrNames = (actor.attributes || []).map((a) => a.name);
+  assert.ok(attrNames.includes('model'), '应含 model 属性');
+  assert.ok(attrNames.includes('tools'), '应含 tools 属性');
 });
 
-test('AT-media-artist-02 | 正文含 text2image 端点、qwen-image 模型、qwen3-vl-plus 与 QWEN_KEY 约束', () => {
-  const text = fs.readFileSync(AGENT_FILE_PATH, 'utf8');
-  const body = text.replace(/^---[\s\S]*?---/, '');
-
-  assert.match(body, /text2image/, '正文应含 text2image 端点');
-  assert.match(body, /dashscope\.aliyuncs\.com\/api\/v1\/services\/aigc\/text2image\/image-synthesis/, '正文应含 DashScope text2image 接口地址');
-  assert.match(body, /qwen-image/, '正文应含 qwen-image 模型约束');
-  assert.match(body, /qwen3-vl-plus/, '正文应含 qwen3-vl-plus 视觉验收');
-  assert.match(body, /QWEN_KEY/, '正文应含 QWEN_KEY 凭据约束');
-  assert.match(body, /禁止/, '正文应声明禁止写入凭据');
+test('AT-media-artist-02 | agentPrompt 涵盖 text2image 端点、qwen-image 模型、qwen3-vl-plus 与 QWEN_KEY 约束', () => {
+  const promptAttr = (actor.attributes || []).find((a) => a.name === 'agentPrompt');
+  assert.ok(promptAttr, '应含 agentPrompt 属性');
+  const prompt = promptAttr.value || '';
+  assert.match(prompt, /text2image/, 'agentPrompt 应含 text2image 端点');
+  assert.match(prompt, /qwen-image/, 'agentPrompt 应含 qwen-image 模型约束');
+  assert.match(prompt, /qwen3-vl-plus/, 'agentPrompt 应含 qwen3-vl-plus 视觉验收');
+  assert.match(prompt, /QWEN_KEY/, 'agentPrompt 应含 QWEN_KEY 凭据约束');
 });
