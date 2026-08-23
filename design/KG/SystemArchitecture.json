@@ -923,6 +923,11 @@
         {
           "name": "deliveryStatus",
           "value": "delivered"
+        },
+        {
+          "name": "commit",
+          "value": "6e968de, 3a8266e",
+          "description": "交付提交 6e968de（梳理文档+讲解视频+幻灯片/旁白/脚本+验收测试+图谱建模）；登记提交 3a8266e（deliveryCommit/deliveryStatus 登记）"
         }
       ]
     }
