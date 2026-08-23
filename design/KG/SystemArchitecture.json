@@ -916,18 +916,18 @@
       "description": "对 ArchGraph 意图图谱中的 Business Actor 组织进行梳理：媒体艺术家、视频制作Leader、视频制作、视频审核四个 Actor 的能力、协作关系与被卷入的主要业务流程，并产出梳理文档与讲解视频交付物。",
       "attributes": [
         {
+          "description": "docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md; docs/diagrams/actor-explainer/01-制作方案与分镜脚本.md; docs/diagrams/actor-explainer/02-验收核对报告.md; docs/diagrams/actor-explainer/actor-explainer.mp4; docs/diagrams/actor-explainer/slides/; docs/diagrams/actor-explainer/narration/; docs/diagrams/actor-explainer/audio/; scripts/generate-actor-explainer-slides.js; scripts/assemble-actor-explainer-video.ps1; tests/acceptance/test-actor-explainer-video.js; design/KG/SystemArchitecture.json",
           "name": "deliveryCommit",
-          "value": "6e968de",
-          "description": "docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md; docs/diagrams/actor-explainer/01-制作方案与分镜脚本.md; docs/diagrams/actor-explainer/02-验收核对报告.md; docs/diagrams/actor-explainer/actor-explainer.mp4; docs/diagrams/actor-explainer/slides/; docs/diagrams/actor-explainer/narration/; docs/diagrams/actor-explainer/audio/; scripts/generate-actor-explainer-slides.js; scripts/assemble-actor-explainer-video.ps1; tests/acceptance/test-actor-explainer-video.js; design/KG/SystemArchitecture.json"
+          "value": "6e968de, 1194d2ad"
         },
         {
           "name": "deliveryStatus",
           "value": "delivered"
         },
         {
+          "description": "交付 6e968de（9场景版：梳理文档+视频+幻灯片/旁白/脚本+测试+图谱建模）；登记 3a8266e、主题修正 36a27c5（品牌 ArchGraph→deepresearch）；扩展 1194d2ad（13场景版覆盖全部 Agent：研究智能体单/多智能体 + 生产 Actor，验收测试扩至28项，qwen3-vl-plus 13/13 符合）",
           "name": "commit",
-          "value": "6e968de, 3a8266e, 36a27c5",
-          "description": "交付 6e968de（梳理文档+讲解视频+幻灯片/旁白/脚本+测试+图谱建模）；登记 3a8266e（deliveryCommit/deliveryStatus）；主题修正 36a27c5（品牌 ArchGraph→deepresearch，重录 S1/S9 旁白、全页脚更新、重组装 154.5s，复审 9/9）"
+          "value": "6e968de, 3a8266e, 36a27c5, 1194d2ad"
         }
       ]
     },
@@ -935,7 +935,7 @@
       "id": "video-leader-memory-20260823-actor-explainer",
       "name": "记忆-2026-08-23-ACTOR讲解视频生产验收",
       "type": "Meaning",
-      "description": "会话摘要（video-leader-001）——需求：梳理意图图谱中 4 个 Business Actor（媒体艺术家/视频制作Leader/视频制作/视频审核）的能力、协作关系与被卷入的主要业务流程，并产出讲解视频。交付：docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md；actor-explainer.mp4（1920×1080 16:9，154.5s≈2分34秒，9 场景：开场/组织总览/媒体艺术家/视频制作Leader/视频制作/视频审核/协作关系图/视频制作流程/结尾）。制作路径：SVG→PNG（sharp，微软雅黑）深色信息图幻灯片 + cosyvoice-v3-flash longxiaochun_v3 旁白（bl speech synthesize --base-url https://dashscope.aliyuncs.com --format wav）+ ffmpeg 每场景图+音淡入淡出合成后 concat（H.264/AAC 1920×1080 30fps）。验收：qwen3-vl-plus 抽帧逐场景核对，首轮 s3/s5 被指出偏重技术工具链、未点明组织协作归属，补充「所属团队+协作角色定位」上下文行后复审通过，最终 9/9 符合（报告 02-验收核对报告.md）。主题修正（36a27c5）：品牌由 ArchGraph 统一改为 deepresearch（标题/全部页脚/S1·S9 旁白），重录 S1/S9、重组装 154.5s，抽帧复审 9/9。图谱：新增 Work Package actor-explainer-wp-001（挂 1249，含于视图174）+ 验收测试 tests/acceptance/test-actor-explainer-video.js（16 项 PASS）；回归 video-team 7/7、media-artist 13/13、validate 通过。commits：6e968de（交付：梳理文档+视频+幻灯片/旁白/脚本+测试+图谱建模）、3a8266e（登记 deliveryCommit/deliveryStatus）、a5be6ec（补 commit 属性）、36a27c5（主题修正）。复用经验：a) PowerShell 内联字符串 $var:d= 会把 :d 吞进变量名导致空值，须用 ${var}:d=；b) bl speech synthesize 需 --base-url https://dashscope.aliyuncs.com 且输出 wav 容器；c) 讲解类视频用 SVG 渲染中文文本（sharp/微软雅黑）可避免文生图/文生视频文本幻觉；d) ffmpeg concat 列表须无 BOM UTF-8 + -safe 0 绝对路径；e) updateElement attributes 为整体替换需合并补写既有属性。待办：如需更丰富可加背景音乐、章节标题卡或结尾二维码。"
+      "description": "会话摘要（video-leader-001）——需求：梳理 deepresearch 全部 Agent 的能力、协作关系与被卷入的主要业务流程，并产出讲解视频（用户确认覆盖范围=全部 Agent）。交付：docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md；actor-explainer.mp4（1920×1080 16:9，203s≈3分23秒，13 场景：开场/Agent全景/单智能体GPTResearcher/多智能体团队总览/编排与规划/研究与撰写/质量保障/人工与呈现/LangGraph工作流/媒体艺术家/视频团队/生产协作与流程/总结）。覆盖：研究智能体（单智能体 GPTResearcher + 多智能体协作团队 10 角色：ChiefEditor/Editor/Research/Writer/Reviewer/Reviser/FactChecker/Human/Visualizer/Publisher）+ 生产 Actor（媒体艺术家/视频制作Leader/视频制作/视频审核）。制作路径：SVG→PNG（sharp，微软雅黑）深色信息图幻灯片 + cosyvoice-v3-flash longxiaochun_v3 旁白（bl speech synthesize --base-url https://dashscope.aliyuncs.com --format wav）+ ffmpeg 每场景图+音淡入淡出合成后 concat（H.264/AAC 1920×1080 30fps）。验收：qwen3-vl-plus 抽帧逐场景核对，最终 13/13 符合（s11 首轮被指出未点明与研究智能体构成完整体系，补底部上下文后复审通过；报告 02-验收核对报告.md）。图谱：Work Package actor-explainer-wp-001（挂 1249，视图174）+ 验收测试 tests/acceptance/test-actor-explainer-video.js（扩展至 28 项 PASS，含 12 项研究智能体断言）；回归 video-team 7/7、media-artist 13/13、validate 通过。commits：6e968de（9场景交付）、3a8266e（登记）、a5be6ec（commit属性）、36a27c5（主题修正 ArchGraph→deepresearch）、1194d2ad（13场景扩展全部Agent）。复用经验：a) PowerShell 内联字符串 $var:d= 会把 :d 吞进变量名导致空值，须用 ${var}:d=；b) bl speech synthesize 需 --base-url https://dashscope.aliyuncs.com 且输出 wav 容器；c) 讲解类视频用 SVG 渲染中文文本（sharp/微软雅黑）可避免文生图/文生视频文本幻觉；d) ffmpeg concat 列表须无 BOM UTF-8 + -safe 0 绝对路径；e) updateElement attributes 为整体替换需合并补写既有属性。待办：如需更丰富可加背景音乐、章节标题卡或结尾二维码。"
     }
   ],
   "relationships": [
