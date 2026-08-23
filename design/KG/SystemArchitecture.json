@@ -832,6 +832,11 @@
         {
           "name": "agent",
           "value": "video-leader"
+        },
+        {
+          "name": "commit",
+          "value": "9d4f1c6",
+          "description": "design/KG/SystemArchitecture.json; tests/video-team-actor.test.js"
         }
       ],
       "description": "视频制作团队的 Leader Business Actor。接收视频制作需求（主题、时长、风格、用途、交付要求），统筹编排视频制作流程：将制作任务指派给「视频制作」Actor，将验收任务指派给「视频审核」Actor；审核通过后向需求提出者交付最终视频文件（MP4）。对视频交付是否满足需求提出者要求负最终责任。",
@@ -854,6 +859,11 @@
         {
           "name": "agent",
           "value": "video-producer"
+        },
+        {
+          "name": "commit",
+          "value": "9d4f1c6",
+          "description": "design/KG/SystemArchitecture.json; tests/video-team-actor.test.js"
         }
       ],
       "description": "负责实际生成视频的 Business Actor。接收 Leader 指派的视频制作需求，解析需求（主题、时长、分辨率、宽高比、风格），通过 dashscope-video-generator Skill 调用 DashScope 视频生成模型（HappyHorse happyhorse-1.1-t2v / happyhorse-1.0-t2v，或万相 wan2.7-t2v 等）生成视频：提交 video-synthesis 异步任务、轮询 task_id、SUCCEEDED 后取 output.video_url 下载 MP4；视频链接 24 小时有效须立即下载转存至 docs/diagrams/。",
@@ -867,6 +877,11 @@
         {
           "name": "agent",
           "value": "video-reviewer"
+        },
+        {
+          "name": "commit",
+          "value": "9d4f1c6",
+          "description": "design/KG/SystemArchitecture.json; tests/video-team-actor.test.js"
         }
       ],
       "description": "负责审核生成视频是否满足需求提出者要求的 Business Actor。接收 Leader 指派的验收任务，读取需求提出者的原始要求（主题、画面元素、时长、风格、标注），抽取生成视频的关键帧，通过 qwen3-vl-visual-inspection Skill 使用 qwen3-vl-plus 视觉模型分析帧画面：核对画面元素完整性、内容是否符合需求主题、时长与分辨率是否达标、文字/标注是否准确无遮挡；输出逐条核对结论（符合/不符合 + 依据），供 Leader 决定交付或返工。",
