@@ -10,8 +10,9 @@
  *           挂载于 Implementation and Migration Viewpoint(1249)，
  *           并包含于「Implementation and Migration」视图(174)；
  *        2) 梳理文档 docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md 存在，
- *           且覆盖四个 Business Actor（媒体艺术家/视频制作Leader/视频制作/视频审核）、
- *           能力、协作关系、业务流程；
+ *           且覆盖全部 Agent：研究智能体（GPTResearcher 单智能体、多智能体协作团队
+ *           10 角色）与生产 Actor（媒体艺术家/视频制作Leader/视频制作/视频审核），
+ *           并覆盖能力、协作关系、业务流程维度；
  *        3) 讲解视频 docs/diagrams/actor-explainer/actor-explainer.mp4 存在且非空。
  *
  * 退出码：0 = 通过；1 = 失败。仅依赖 Node 内置模块。
@@ -75,11 +76,17 @@ function main() {
   if (doc) {
     const actors = ['媒体艺术家', '视频制作Leader', '视频制作', '视频审核'];
     for (const a of actors) {
-      record(`文档覆盖 Actor「${a}」`, doc.includes(a));
+      record(`文档覆盖生产 Actor「${a}」`, doc.includes(a));
+    }
+    const researchAgents = ['GPTResearcher', 'ChiefEditorAgent', 'EditorAgent', 'ResearchAgent', 'WriterAgent', 'ReviewerAgent', 'ReviserAgent', 'FactCheckerAgent', 'HumanAgent', 'VisualizerAgent', 'PublisherAgent'];
+    for (const a of researchAgents) {
+      record(`文档覆盖研究智能体「${a}」`, doc.includes(a));
     }
     record('文档覆盖「能力」维度', /能力/.test(doc));
     record('文档覆盖「协作关系」维度', /协作/.test(doc));
     record('文档覆盖「业务流程」维度', /业务(流程|过程)/.test(doc));
+    record('文档覆盖单智能体流程', /单智能体/.test(doc));
+    record('文档覆盖多智能体 LangGraph 工作流', /多智能体/.test(doc) && /LangGraph/.test(doc));
   }
 
   // ---- 3) 讲解视频 ----

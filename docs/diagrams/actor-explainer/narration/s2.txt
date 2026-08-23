@@ -1,1 +1,1 @@
-在 Agent 组织中，共登记四个业务角色，分属两个团队。媒体创作团队，由媒体艺术家负责图片与视频创作；视频制作团队，由视频制作 Leader 统筹，带领视频制作与视频审核两个角色，完成视频的生成与验收。
+在 deepresearch 的意图图谱中，Agent 体系分为两大块：第一块是 gpt-researcher Agent 行为模型，包含单智能体系统 GPTResearcher，与多智能体协作系统；第二块是 AgentOrganization 媒体与视频生产组织，包含媒体艺术家，以及视频制作 Leader 带领的制作与审核角色。

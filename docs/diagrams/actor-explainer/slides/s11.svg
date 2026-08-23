@@ -1,0 +1,58 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#ffb547"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">视频团队</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">视频制作Leader · 视频制作 · 视频审核</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">11 / 13</text>
+
+  <rect x="120" y="280" width="560" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="120" y="280" width="8" height="560" rx="4" fill="#ffb547"/>
+  <text x="150" y="338" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视频制作Leader</text>
+  
+  <circle cx="160" cy="390" r="7" fill="#ffb547"/>
+  <text x="182" y="400" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">接收/解析需求</text>
+  <circle cx="160" cy="460" r="7" fill="#ffb547"/>
+  <text x="182" y="470" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">指派制作 / 指派审核</text>
+  <circle cx="160" cy="530" r="7" fill="#ffb547"/>
+  <text x="182" y="540" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">通过后交付 MP4</text>
+  <circle cx="160" cy="600" r="7" fill="#ffb547"/>
+  <text x="182" y="610" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">负最终责任</text>
+
+
+  <rect x="720" y="280" width="540" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="720" y="280" width="8" height="560" rx="4" fill="#5ee0a0"/>
+  <text x="750" y="338" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视频制作</text>
+  
+  <circle cx="760" cy="390" r="7" fill="#5ee0a0"/>
+  <text x="782" y="400" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">dashscope-video-generator</text>
+  <circle cx="760" cy="460" r="7" fill="#5ee0a0"/>
+  <text x="782" y="470" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">happyhorse / wan2.7-t2v</text>
+  <circle cx="760" cy="530" r="7" fill="#5ee0a0"/>
+  <text x="782" y="540" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">异步轮询下载</text>
+  <circle cx="760" cy="600" r="7" fill="#5ee0a0"/>
+  <text x="782" y="610" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">链接 24h 有效</text>
+  <rect x="750" y="700" width="820" height="58" rx="29" fill="#5ee0a0" opacity="0.14" stroke="#5ee0a0" stroke-width="1.5"/>
+  <text x="1160" y="739" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#5ee0a0" text-anchor="middle">dashscope-video-generator</text>
+
+
+  <rect x="1300" y="280" width="520" height="560" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="1300" y="280" width="8" height="560" rx="4" fill="#ff7a9c"/>
+  <text x="1330" y="338" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视频审核</text>
+  
+  <circle cx="1340" cy="390" r="7" fill="#ff7a9c"/>
+  <text x="1362" y="400" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">抽取关键帧</text>
+  <circle cx="1340" cy="460" r="7" fill="#ff7a9c"/>
+  <text x="1362" y="470" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">qwen3-vl-plus 分析</text>
+  <circle cx="1340" cy="530" r="7" fill="#ff7a9c"/>
+  <text x="1362" y="540" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">元素/主题/时长/标注</text>
+  <circle cx="1340" cy="600" r="7" fill="#ff7a9c"/>
+  <text x="1362" y="610" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">输出符合/不符合</text>
+  <rect x="1330" y="700" width="850" height="58" rx="29" fill="#ff7a9c" opacity="0.14" stroke="#ff7a9c" stroke-width="1.5"/>
+  <text x="1755" y="739" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#ff7a9c" text-anchor="middle">qwen3-vl-visual-inspection</text>
+
+<text x="960" y="940" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9fb0cf" text-anchor="middle">deepresearch 生产 Actor · 与研究智能体协作，将研究成果可视化交付</text>
+</svg>

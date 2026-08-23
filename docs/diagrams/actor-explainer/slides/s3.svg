@@ -2,60 +2,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
 
   <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
-  <rect x="0" y="0" width="1920" height="12" fill="#7fd1ff"/>
-  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">媒体艺术家 · media-artist-001</text>
-  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">媒体创作团队 · 图片与视频的创作执行</text>
+  <rect x="0" y="0" width="1920" height="12" fill="#4fd8c8"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">单智能体系统 GPTResearcher</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">gpt-researcher Agent 行为模型 · 从查询到报告的全流程</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
   <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
-  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">3 / 9</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">3 / 13</text>
 
-  <rect x="120" y="260" width="520" height="620" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
-  <rect x="120" y="260" width="8" height="620" rx="4" fill="#7fd1ff"/>
-  <text x="150" y="318" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">图片生成</text>
+  <rect x="140" y="260" width="820" height="620" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="140" y="260" width="8" height="620" rx="4" fill="#4fd8c8"/>
+  <text x="170" y="318" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">行为函数（能力）</text>
   
-  <circle cx="160" cy="370" r="7" fill="#7fd1ff"/>
-  <text x="182" y="380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">DashScope 原生 text2image</text>
-  <circle cx="160" cy="440" r="7" fill="#7fd1ff"/>
-  <text x="182" y="450" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">模型：qwen-image / qwen-image-plus</text>
-  <circle cx="160" cy="510" r="7" fill="#7fd1ff"/>
-  <text x="182" y="520" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">异步任务轮询，下载 PNG</text>
-  <circle cx="160" cy="580" r="7" fill="#7fd1ff"/>
-  <text x="182" y="590" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">输出至 docs/diagrams/</text>
-  <rect x="150" y="680" width="820" height="58" rx="29" fill="#7fd1ff" opacity="0.14" stroke="#7fd1ff" stroke-width="1.5"/>
-  <text x="560" y="719" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#7fd1ff" text-anchor="middle">dashscope-media-generator</text>
+  <circle cx="180" cy="370" r="7" fill="#4fd8c8"/>
+  <text x="202" y="380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">choose_agent 选择智能体角色</text>
+  <circle cx="180" cy="440" r="7" fill="#4fd8c8"/>
+  <text x="202" y="450" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">plan_research 规划研究子查询</text>
+  <circle cx="180" cy="510" r="7" fill="#4fd8c8"/>
+  <text x="202" y="520" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">conduct_research 按来源执行检索</text>
+  <circle cx="180" cy="580" r="7" fill="#4fd8c8"/>
+  <text x="202" y="590" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">curate_sources 来源可信度策展</text>
+  <circle cx="180" cy="650" r="7" fill="#4fd8c8"/>
+  <text x="202" y="660" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">write_report 撰写报告</text>
+  <circle cx="180" cy="720" r="7" fill="#4fd8c8"/>
+  <text x="202" y="730" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">deep_research 广度×深度递归下钻</text>
 
 
-  <rect x="700" y="260" width="520" height="620" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
-  <rect x="700" y="260" width="8" height="620" rx="4" fill="#7fd1ff"/>
-  <text x="730" y="318" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视觉验收</text>
+  <rect x="1000" y="260" width="780" height="300" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="1000" y="260" width="8" height="300" rx="4" fill="#4fd8c8"/>
+  <text x="1030" y="318" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">数据对象</text>
   
-  <circle cx="740" cy="370" r="7" fill="#7fd1ff"/>
-  <text x="762" y="380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">qwen3-vl-plus 视觉模型</text>
-  <circle cx="740" cy="440" r="7" fill="#7fd1ff"/>
-  <text x="762" y="450" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">画面元素完整性</text>
-  <circle cx="740" cy="510" r="7" fill="#7fd1ff"/>
-  <text x="762" y="520" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">角色标注坐标定位</text>
-  <circle cx="740" cy="580" r="7" fill="#7fd1ff"/>
-  <text x="762" y="590" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">确认标注无遮挡 / 无重叠</text>
-  <rect x="730" y="680" width="850" height="58" rx="29" fill="#7fd1ff" opacity="0.14" stroke="#7fd1ff" stroke-width="1.5"/>
-  <text x="1155" y="719" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#7fd1ff" text-anchor="middle">qwen3-vl-visual-inspection</text>
+  <circle cx="1040" cy="370" r="7" fill="#4fd8c8"/>
+  <text x="1062" y="380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">研究上下文 · 研究来源</text>
+  <circle cx="1040" cy="440" r="7" fill="#4fd8c8"/>
+  <text x="1062" y="450" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">报告（Markdown）· 子主题</text>
 
 
-  <rect x="1280" y="260" width="520" height="620" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
-  <rect x="1280" y="260" width="8" height="620" rx="4" fill="#7fd1ff"/>
-  <text x="1310" y="318" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">视频生成</text>
+  <rect x="1000" y="600" width="780" height="280" rx="16" fill="#141c2c" stroke="#2a3a55" stroke-width="2"/>
+  <rect x="1000" y="600" width="8" height="280" rx="4" fill="#4fd8c8"/>
+  <text x="1030" y="658" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="32" font-weight="bold" fill="#e8eefb">业务流程：单智能体研究-报告流程</text>
   
-  <circle cx="1320" cy="370" r="7" fill="#7fd1ff"/>
-  <text x="1342" y="380" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">万相 wan2.7-t2v / HappyHorse</text>
-  <circle cx="1320" cy="440" r="7" fill="#7fd1ff"/>
-  <text x="1342" y="450" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">异步 video-synthesis 任务</text>
-  <circle cx="1320" cy="510" r="7" fill="#7fd1ff"/>
-  <text x="1342" y="520" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">链接 24h 有效须立即转存</text>
-  <circle cx="1320" cy="580" r="7" fill="#7fd1ff"/>
-  <text x="1342" y="590" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#c7d2e8">输出 MP4 至 docs/diagrams/</text>
-  <rect x="1310" y="680" width="820" height="58" rx="29" fill="#7fd1ff" opacity="0.14" stroke="#7fd1ff" stroke-width="1.5"/>
-  <text x="1720" y="719" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" font-weight="bold" fill="#7fd1ff" text-anchor="middle">dashscope-video-generator</text>
+  <text x="1030" y="700" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#c7d2e8">choose → plan → conduct → curate → write_report</text>
+  <text x="1030" y="760" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2">（deep_research 分支独立下钻；可选图片预生成）</text>
 
-<text x="960" y="940" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9fb0cf" text-anchor="middle">媒体创作团队 · 被指派为「图片视频生成」Role · 对最终图片/视频可视质量负责</text>
-<text x="960" y="985" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#6b7c9c" text-anchor="middle">模型：alibaba-cn/qwen3.7-plus · 创作须符合仓库文档上下文，不得凭空捏造画面事实</text>
 </svg>

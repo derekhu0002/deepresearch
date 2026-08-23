@@ -1,0 +1,45 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
+  <rect x="0" y="0" width="1920" height="12" fill="#ff7a9c"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">生产协作与业务流程</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">媒体创作流程 + 视频制作流程 + 协作关系</text>
+  <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
+  <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">12 / 13</text>
+<text x="960" y="250" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#ffc3d2" text-anchor="middle">协作关系</text>
+<rect x="200" y="280" width="320" height="80" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
+  <text x="360" y="332" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体艺术家</text><text x="360" y="364" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">媒体创作团队</text>
+<line x1="360" y1="360" x2="310.4126619752955" y2="417.85189436215524" stroke="#9d7bff" stroke-width="4"/>
+  <polygon points="300,430 303.57935255400787,411.9947720010515 317.2459713965832,423.70901672325897" fill="#9d7bff"/>
+<rect x="140" y="430" width="320" height="80" rx="14" fill="#9d7bff" opacity="0.12" stroke="#9d7bff" stroke-width="2.5"/>
+  <text x="300" y="482" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#9d7bff" text-anchor="middle">图片视频生成 Role</text><text x="300" y="514" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">Assignment 指派</text>
+<line x1="230" y1="510" x2="188.47998304005088" y2="576.4320271359186" stroke="#5b8cff" stroke-width="4"/>
+  <polygon points="180,590 180.8479983040051,571.66203667589 196.11196777609666,581.2020175959472" fill="#5b8cff"/>
+<line x1="330" y1="510" x2="417.5060990489115" y2="580.0048792391292" stroke="#5ee0a0" stroke-width="4"/>
+  <polygon points="430,590 411.88384362092165,587.0326985241164 423.12835447690134,572.977059954142" fill="#5ee0a0"/>
+<line x1="430" y1="510" x2="644.8880512527014" y2="584.7436700009397" stroke="#ff7a9c" stroke-width="4"/>
+  <polygon points="660,590 641.93136562823,593.2441411712952 647.8447368771729,576.2431988305842" fill="#ff7a9c"/>
+<rect x="60" y="590" width="300" height="70" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
+  <text x="210" y="637" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">图像生成 Skill</text>
+<rect x="420" y="590" width="300" height="70" rx="14" fill="#ff7a9c" opacity="0.12" stroke="#ff7a9c" stroke-width="2.5"/>
+  <text x="570" y="637" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ff7a9c" text-anchor="middle">视觉验收 Skill</text>
+<rect x="780" y="590" width="320" height="70" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="940" y="637" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">视频生成 Skill</text>
+<rect x="1420" y="280" width="380" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1610" y="332" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作Leader</text><text x="1610" y="364" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">视频制作团队</text>
+<line x1="1340" y1="360" x2="1233.820462414375" y2="421.9380635916146" stroke="#ffb547" stroke-width="4"/>
+  <polygon points="1220,430 1229.2856231846583,414.1640534835287 1238.3553016440917,429.7120736997005" fill="#ffb547"/>
+<line x1="1620" y1="360" x2="1620" y2="414" stroke="#ffb547" stroke-width="4"/>
+  <polygon points="1620,430 1611,414 1629,414" fill="#ffb547"/>
+<rect x="1100" y="430" width="280" height="80" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="1240" y="482" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">视频制作</text><text x="1240" y="514" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">Aggregation 归属</text>
+<rect x="1560" y="430" width="280" height="80" rx="14" fill="#ff7a9c" opacity="0.12" stroke="#ff7a9c" stroke-width="2.5"/>
+  <text x="1700" y="482" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ff7a9c" text-anchor="middle">视频审核</text><text x="1700" y="514" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">Aggregation 归属</text>
+<text x="960" y="740" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#ffc3d2" text-anchor="middle">业务流程</text>
+<rect x="140" y="770" width="300" height="80" rx="14" fill="#7fd1ff" opacity="0.12" stroke="#7fd1ff" stroke-width="2.5"/>
+  <text x="290" y="822" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体创作流程</text><text x="290" y="854" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">需求→生成→视觉验收→交付</text>
+<rect x="900" y="770" width="300" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1050" y="822" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作流程</text><text x="1050" y="854" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">需求→指派制作→指派审核→交付/返工</text>
+</svg>

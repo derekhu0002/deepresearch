@@ -18,7 +18,7 @@ $VIDEO_FADE = 0.5
 $AUDIO_FADE = 0.25
 
 $listLines = @()
-for ($i = 1; $i -le 9; $i++) {
+for ($i = 1; $i -le 13; $i++) {
   $png = Join-Path $slides "s$i.png"
   $wav = Join-Path $audio "s$i.wav"
   $out = Join-Path $clips "clip$i.mp4"

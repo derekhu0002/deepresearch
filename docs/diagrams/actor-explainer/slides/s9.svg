@@ -2,21 +2,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
 
   <rect x="0" y="0" width="1920" height="1080" fill="#0e1420"/>
-  <rect x="0" y="0" width="1920" height="12" fill="#5b8cff"/>
-  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">总结</text>
-  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">4 个业务角色 · 明确的能力边界与协作关系</text>
+  <rect x="0" y="0" width="1920" height="12" fill="#ffb547"/>
+  <text x="80" y="104" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#f2f6ff">多智能体 LangGraph 工作流</text>
+  <text x="82" y="162" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#9aa7bd">2082 · 端到端编排 + 章节评审修订子工作流</text>
   <line x1="80" y1="196" x2="1840" y2="196" stroke="#1f2a3d" stroke-width="2"/>
   <text x="80" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85">deepresearch · Agent 组织与协作</text>
-  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">9 / 9</text>
-<rect x="150" y="300" width="220" height="50" rx="10" fill="#7fd1ff" opacity="0.16" stroke="#7fd1ff" stroke-width="1.5"/>
-  <text x="260" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#7fd1ff" text-anchor="middle">媒体艺术家</text>
-<rect x="620" y="300" width="390" height="50" rx="10" fill="#ffb547" opacity="0.16" stroke="#ffb547" stroke-width="1.5"/>
-  <text x="815" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#ffb547" text-anchor="middle">视频制作Leader</text>
-<rect x="1090" y="300" width="186" height="50" rx="10" fill="#5ee0a0" opacity="0.16" stroke="#5ee0a0" stroke-width="1.5"/>
-  <text x="1183" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#5ee0a0" text-anchor="middle">视频制作</text>
-<rect x="1560" y="300" width="186" height="50" rx="10" fill="#ff7a9c" opacity="0.16" stroke="#ff7a9c" stroke-width="1.5"/>
-  <text x="1653" y="334" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="25" font-weight="bold" fill="#ff7a9c" text-anchor="middle">视频审核</text>
-<text x="960" y="500" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="34" fill="#c7d2e8" text-anchor="middle">共同支撑 deepresearch 的媒体与视频高效交付</text>
-<text x="960" y="620" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" fill="#9fb0cf" text-anchor="middle">梳理文档：docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md</text>
-<text x="960" y="760" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="60" font-weight="bold" fill="#7fd1ff" text-anchor="middle">谢谢观看</text>
+  <text x="1820" y="1042" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="22" fill="#5a6a85" text-anchor="end">9 / 13</text>
+<text x="960" y="250" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#ffd9a0" text-anchor="middle">端到端工作流</text>
+<rect x="70" y="290" width="210" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="175" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">browser</text><text x="175" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">initial_research</text>
+<line x1="280" y1="330" x2="324" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="340,330 324,339 324,321" fill="#4e6a9c"/>
+<rect x="340" y="290" width="210" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="445" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">planner</text><text x="445" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">plan_research</text>
+<line x1="550" y1="330" x2="594" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="610,330 594,339 594,321" fill="#4e6a9c"/>
+<rect x="610" y="290" width="210" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="715" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">human</text><text x="715" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">review_plan</text>
+<line x1="820" y1="330" x2="864" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="880,330 864,339 864,321" fill="#4e6a9c"/>
+<rect x="880" y="290" width="220" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="990" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">researcher</text><text x="990" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">parallel</text>
+<line x1="1100" y1="330" x2="1144" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1160,330 1144,339 1144,321" fill="#4e6a9c"/>
+<rect x="1160" y="290" width="180" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1250" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">writer</text><text x="1250" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">撰写</text>
+<line x1="1340" y1="330" x2="1384" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1400,330 1384,339 1384,321" fill="#4e6a9c"/>
+<rect x="1400" y="290" width="200" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1500" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">fact_checker</text><text x="1500" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">条件</text>
+<line x1="1600" y1="330" x2="1634" y2="330" stroke="#4e6a9c" stroke-width="4"/>
+  <polygon points="1650,330 1634,339 1634,321" fill="#4e6a9c"/>
+<rect x="1650" y="290" width="200" height="80" rx="14" fill="#ffb547" opacity="0.12" stroke="#ffb547" stroke-width="2.5"/>
+  <text x="1750" y="342" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#ffb547" text-anchor="middle">visualizer</text><text x="1750" y="374" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">图表</text>
+<text x="960" y="440" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="26" fill="#ffd9a0" text-anchor="middle">… → publisher → END</text>
+<text x="960" y="560" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="28" fill="#ffd9a0" text-anchor="middle">章节草稿评审修订子工作流（2083）</text>
+<rect x="420" y="600" width="300" height="90" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="570" y="657" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">researcher</text><text x="570" y="689" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">run_depth_research</text>
+<line x1="720" y1="645" x2="824" y2="645" stroke="#5ee0a0" stroke-width="4"/>
+  <polygon points="840,645 824,654 824,636" fill="#5ee0a0"/>
+<rect x="840" y="600" width="300" height="90" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="990" y="657" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">reviewer</text><text x="990" y="689" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">review_draft</text>
+<line x1="1140" y1="645" x2="1244" y2="645" stroke="#5ee0a0" stroke-width="4"/>
+  <polygon points="1260,645 1244,654 1244,636" fill="#5ee0a0"/>
+<rect x="1260" y="600" width="300" height="90" rx="14" fill="#5ee0a0" opacity="0.12" stroke="#5ee0a0" stroke-width="2.5"/>
+  <text x="1410" y="657" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="30" font-weight="bold" fill="#5ee0a0" text-anchor="middle">reviser</text><text x="1410" y="689" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#93a4c2" text-anchor="middle">revise_draft</text>
+<path d="M1260 690 L1260 770 L1000 770 L1000 730" fill="none" stroke="#5ee0a0" stroke-width="4"/>
+<polygon points="1000 714 992 734 1008 734" fill="#5ee0a0"/>
+<text x="1140" y="800" font-family="'Microsoft YaHei','PingFang SC','Noto Sans CJK SC',sans-serif" font-size="24" fill="#a8ecc9" text-anchor="middle">循环直至接受</text>
 </svg>
