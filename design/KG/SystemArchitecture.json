@@ -913,7 +913,18 @@
       "name": "制作ACTOR讲解视频",
       "type": "Work Package",
       "parent": "1249",
-      "description": "对 ArchGraph 意图图谱中的 Business Actor 组织进行梳理：媒体艺术家、视频制作Leader、视频制作、视频审核四个 Actor 的能力、协作关系与被卷入的主要业务流程，并产出梳理文档与讲解视频交付物。"
+      "description": "对 ArchGraph 意图图谱中的 Business Actor 组织进行梳理：媒体艺术家、视频制作Leader、视频制作、视频审核四个 Actor 的能力、协作关系与被卷入的主要业务流程，并产出梳理文档与讲解视频交付物。",
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "6e968de",
+          "description": "docs/diagrams/actor-explainer/00-ACTOR梳理与协作关系.md; docs/diagrams/actor-explainer/01-制作方案与分镜脚本.md; docs/diagrams/actor-explainer/02-验收核对报告.md; docs/diagrams/actor-explainer/actor-explainer.mp4; docs/diagrams/actor-explainer/slides/; docs/diagrams/actor-explainer/narration/; docs/diagrams/actor-explainer/audio/; scripts/generate-actor-explainer-slides.js; scripts/assemble-actor-explainer-video.ps1; tests/acceptance/test-actor-explainer-video.js; design/KG/SystemArchitecture.json"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
+        }
+      ]
     }
   ],
   "relationships": [
