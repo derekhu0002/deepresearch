@@ -835,8 +835,8 @@
         },
         {
           "name": "commit",
-          "value": "420627b",
-          "description": "0d6f008 docs/diagrams/huan-yi-huan/（16段MP4+00/01/02文档）；9c58ebb 登记交付commit；76aacda 长期记忆子视图；420627b 修复agent属性；9d4f1c6 tests/video-team-actor.test.js"
+          "value": "c60bd2a, eacdf2c, a3efa48, 9312955, 52f2a2a, 6943957",
+          "description": "返工整合：《换一换》定妆照(c60bd2a characters/)；8段参考生视频(eacdf2c R1-R8)；17条配音(a3efa48 audio/)；完整影片(9312955 huan-yi-huan-full.mp4)；验收报告(52f2a2a 03-返工整合验收报告.md)；字幕修复+复现脚本(6943957)"
         }
       ],
       "description": "视频制作团队的 Leader Business Actor。接收视频制作需求（主题、时长、风格、用途、交付要求），统筹编排视频制作流程：将制作任务指派给「视频制作」Actor，将验收任务指派给「视频审核」Actor；审核通过后向需求提出者交付最终视频文件（MP4）。对视频交付是否满足需求提出者要求负最终责任。",
