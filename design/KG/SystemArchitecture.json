@@ -782,6 +782,11 @@
           "name": "commit",
           "value": "0506d36",
           "description": "docs/diagrams/ww2-happyhorse-3s.mp4"
+        },
+        {
+          "name": "commit",
+          "value": "9176f5e",
+          "description": "docs/diagrams/surgical-team-ai/组织架构图.png; docs/diagrams/surgical-team-ai/组织架构图.md; docs/diagrams/surgical-team-ai/00-创作方案与画面设计.md; docs/diagrams/surgical-team-ai/01-验收核对报告.md"
         }
       ],
       "description": "负责 ArchGraph 项目的图片与视频生成任务的 Business Actor。接收创作需求（描述图片/视频主题、风格、用途），通过 dashscope-media-generator Skill 调用阿里云 DashScope 图像生成接口（qwen-image / qwen-image-plus，原生 text2image API）生成写实图片，并根据需要调用视觉模型（qwen3-vl-plus）验收画面内容与角色标注定位；视频生成类任务按项目当前可用能力（DashScope 视频生成接口）执行或说明限制。对最终图片/视频交付的可视质量负责。创作须符合仓库文档上下文，不得凭空捏造画面事实。",
