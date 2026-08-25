@@ -248,6 +248,13 @@
           "view_id": "1762",
           "view_name": "单智能体行为函数"
         }
+      ],
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "0df9cee",
+          "description": "design/KG/SystemArchitecture.json — 升格 8 个单智能体组件(GPTResearcher/ResearchConductor/ReportGenerator/SourceCurator/ContextManager/DeepResearchSkill/BrowserManager/ImageGenerator)为 Business Actor"
+        }
       ]
     },
     {
@@ -492,6 +499,13 @@
         {
           "view_id": "1765",
           "view_name": "多智能体行为函数"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "0df9cee",
+          "description": "design/KG/SystemArchitecture.json — 升格 10 个多智能体 Agent(ChiefEditorAgent/EditorAgent/ResearchAgent/WriterAgent/ReviewerAgent/ReviserAgent/FactCheckerAgent/HumanAgent/VisualizerAgent/PublisherAgent)为 Business Actor"
         }
       ]
     },
