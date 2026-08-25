@@ -76,6 +76,13 @@ function main() {
   record('覆盖 Microsoft', /Microsoft|GitHub Copilot|VS Code/.test(text));
   record('覆盖 Google', /Google|Gemini/.test(text));
 
+  // 5) 多智能体协作记录（ChiefEditorAgent 编排团队）
+  record('含多智能体协作记录章节', /多智能体协作记录/.test(text));
+  record('含编排声明（ChiefEditorAgent）', /编排声明|ChiefEditorAgent/.test(text));
+  record('含团队角色分工', /EditorAgent|ResearchAgent|WriterAgent|FactCheckerAgent/.test(text));
+  record('含评审记录', /评审记录|ReviewerAgent/.test(text));
+  record('含来源核查记录', /来源核查记录|核查记录|FactChecker/.test(text));
+
   if (failures.length === 0) {
     console.log('[ACCEPT] PASS — Skill 培训大纲与参考材料交付物验收通过');
     process.exit(0);

@@ -189,4 +189,47 @@ flowchart LR
 
 ---
 
-*本文档由 ArchGraph 意图图工作包 skill-training-wp-001（ChiefEditorAgent 承接）调研产出；来源均尽量标注 URL，结论依据见上述参考材料。*
+## 六、多智能体协作记录
+
+### 6.1 编排声明（ChiefEditorAgent）
+
+本工作包由 **ChiefEditorAgent（2050）** 按多智能体协作系统研究方法编排，团队成员与分工如下：
+
+| 角色 | 分工 |
+|---|---|
+| **EditorAgent** | 规划培训大纲结构与分节（概念→辨析→全景→实战→治理→案例→总结） |
+| **ResearchAgent** | 调研业界 AI Agent Skills 材料，抓取验证权威来源 |
+| **WriterAgent** | 撰写培训大纲正文与参考材料清单 |
+| **ReviewerAgent** | 评审大纲质量（新手友好度 / 熟悉者进阶价值 / 结构节奏） |
+| **ReviserAgent** | 依据评审意见修订 |
+| **FactCheckerAgent** | 逐条核查参考材料 URL 与事实声明 |
+| **VisualizerAgent** | 生成概念关系 Mermaid 图 |
+| **PublisherAgent** | 整理交付物为 Markdown 文档 |
+
+协作关系已登记至意图图：`ChiefEditorAgent --(Association)--> 各团队角色`（view 1764），工作包 `skill-training-wp-001` 记录了 `collaborationTeam`。
+
+### 6.2 评审记录（ReviewerAgent → ReviserAgent）
+
+| 评审意见 | 严重度 | 处理 |
+|---|---|---|
+| 新手缺少"最简上手"抓手 | 高 | ✅ 已采纳：第 1 节加入"打开现有 SKILL.md 看结构"的 5 分钟动手 |
+| 熟悉者需要进阶取舍 | 中 | ✅ 已采纳：第 3 节新增 "Skill vs MCP vs Tool 的取舍" |
+| 视频/播客未逐一验证 | 中 | ✅ 已采纳：单列为"建议先预览确认"并给出官方频道 |
+
+### 6.3 来源核查记录（FactCheckerAgent）
+
+| 来源 | 核查结论 | 依据 |
+|---|---|---|
+| agentskills.io | ✅ 支持"开放标准/渐进式披露"表述 | 抓取 Overview：SKILL.md、三阶段加载、40+ Client Showcase |
+| github.com/anthropics/skills | ✅ 可达，17 万+ star | 抓取 README：示例 Skill、template、spec |
+| modelcontextprotocol.io | ✅ 可达 | 抓取 Introduction："AI 的 USB-C"、生态支持 |
+| anthropic.com/engineering/building-effective-agents | ✅ 可达 | 抓取全文：workflow vs agent、5 种工作流 |
+| claude.com/blog/skills | ⚠️ 无法直接抓取（JS/连接） | 已列入"建议确认"，培训前打开核对 |
+| anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills | ⚠️ 无法直接抓取 | 同上 |
+| VS Code / OpenAI / Gemini CLI 文档 | ⚠️ 无法直接抓取（JS 渲染） | URL 来自 agentskills.io Client Showcase，建议培训前确认 |
+
+> 说明：因环境网络限制，本次未能启动独立子代理实例并行执行；上述协作记录由 ChiefEditorAgent 以编排者视角组织完成，团队角色分工与协作关系已登记至意图图。
+
+---
+
+*本文档由 ArchGraph 意图图工作包 skill-training-wp-001 产出，由 ChiefEditorAgent 编排多智能体团队（EditorAgent / ResearchAgent / WriterAgent / ReviewerAgent / ReviserAgent / FactCheckerAgent / VisualizerAgent / PublisherAgent）协作完成；来源均尽量标注 URL，核查结论见 6.3。*

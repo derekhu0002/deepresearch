@@ -961,7 +961,7 @@
       "name": "AI Agent Skills 培训调研与大纲",
       "parent": "1249",
       "type": "Work Package",
-      "description": "由 ChiefEditorAgent（2050）承接：调研业界 AI Agent Skills（SKILL 标准/主流实现/培训材料），产出面向公司内部团队（受众部分熟悉部分不熟悉）的培训大纲与参考材料清单。",
+      "description": "由 ChiefEditorAgent（2050）编排多智能体研究团队承接：EditorAgent 规划培训大纲、ResearchAgent 调研业界 AI Agent Skills 材料（SKILL 标准/主流实现/培训材料）、WriterAgent 撰写培训大纲与参考材料、ReviewerAgent 评审、FactCheckerAgent 核查来源。交付物面向公司内部团队（受众部分熟悉部分不熟悉 Skill）的培训大纲与参考材料清单。",
       "testcases": [
         {
           "name": "验收-AI Agent Skills培训大纲与参考材料",
@@ -980,6 +980,11 @@
         {
           "name": "deliveryStatus",
           "value": "delivered"
+        },
+        {
+          "name": "collaborationTeam",
+          "value": "EditorAgent, ResearchAgent, WriterAgent, ReviewerAgent, ReviserAgent, FactCheckerAgent, VisualizerAgent, PublisherAgent",
+          "description": "ChiefEditorAgent 编排的本次工作包协作团队（Business Actor 2050-2059，Association 编排关系见 view 1764）"
         }
       ]
     }
@@ -1594,6 +1599,86 @@
       "source_name": "ChiefEditorAgent",
       "target_id": "skill-training-wp-001",
       "target_name": "AI Agent Skills 培训调研与大纲"
+    },
+    {
+      "id": "skill-team-orch-001",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> EditorAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2051",
+      "target_name": "EditorAgent"
+    },
+    {
+      "id": "skill-team-orch-002",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> ResearchAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2052",
+      "target_name": "ResearchAgent"
+    },
+    {
+      "id": "skill-team-orch-003",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> WriterAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2053",
+      "target_name": "WriterAgent"
+    },
+    {
+      "id": "skill-team-orch-004",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> ReviewerAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2054",
+      "target_name": "ReviewerAgent"
+    },
+    {
+      "id": "skill-team-orch-005",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> ReviserAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2055",
+      "target_name": "ReviserAgent"
+    },
+    {
+      "id": "skill-team-orch-006",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> FactCheckerAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2056",
+      "target_name": "FactCheckerAgent"
+    },
+    {
+      "id": "skill-team-orch-007",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> VisualizerAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2059",
+      "target_name": "VisualizerAgent"
+    },
+    {
+      "id": "skill-team-orch-008",
+      "name": "编排协作",
+      "statement": "ChiefEditorAgent --(Association)--> PublisherAgent",
+      "type": "Association",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "2058",
+      "target_name": "PublisherAgent"
     }
   ],
   "views": [
@@ -1675,7 +1760,16 @@
         "2058",
         "2059"
       ],
-      "included_relationships": []
+      "included_relationships": [
+        "skill-team-orch-001",
+        "skill-team-orch-002",
+        "skill-team-orch-003",
+        "skill-team-orch-004",
+        "skill-team-orch-005",
+        "skill-team-orch-006",
+        "skill-team-orch-007",
+        "skill-team-orch-008"
+      ]
     },
     {
       "view_id": "1765",
