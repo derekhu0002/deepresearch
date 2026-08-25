@@ -955,6 +955,22 @@
       "parent": "2012",
       "type": "Business Actor",
       "description": "multi_agents/agents/visualizer.py VisualizerAgent：生成 Mermaid 图表。"
+    },
+    {
+      "id": "skill-training-wp-001",
+      "name": "AI Agent Skills 培训调研与大纲",
+      "parent": "1249",
+      "type": "Work Package",
+      "description": "由 ChiefEditorAgent（2050）承接：调研业界 AI Agent Skills（SKILL 标准/主流实现/培训材料），产出面向公司内部团队（受众部分熟悉部分不熟悉）的培训大纲与参考材料清单。",
+      "testcases": [
+        {
+          "name": "验收-AI Agent Skills培训大纲与参考材料",
+          "description": "GIVEN 工作包「AI Agent Skills 培训调研与大纲」已被 ChiefEditorAgent 领取并产出交付物 WHEN 验收方打开交付物文档 docs/insights/skill-培训-AI-Agent-Skills-大纲.md THEN 文档包含培训大纲（含面向新手的概念入门小节与面向熟悉者的业界全景/最佳实践小节）、参考材料清单（含 Agent Skills 开放标准站 agentskills.io、Anthropic 官方 skills 仓库、MCP 官网、Anthropic Building effective agents 等已验证权威来源，每个来源给出 URL 并标注类型：官方文档/仓库/视频/播客）、Skill 与 MCP/Tool/Agent 概念关系说明、覆盖 Anthropic/OpenAI/Microsoft/Google 主流实现。",
+          "type": "Acceptance Test",
+          "Input": "docs/insights/skill-培训-AI-Agent-Skills-大纲.md（交付物）",
+          "acceptanceCriteria": "tests/acceptance/test-skill-training-research.js"
+        }
+      ]
     }
   ],
   "relationships": [
@@ -1557,6 +1573,16 @@
       "source_name": "文档加载器",
       "target_id": "2021",
       "target_name": "ResearchConductor"
+    },
+    {
+      "id": "skill-training-wp-assign-001",
+      "name": "承接",
+      "statement": "ChiefEditorAgent --(Assignment)--> AI Agent Skills 培训调研与大纲",
+      "type": "Assignment",
+      "source_id": "2050",
+      "source_name": "ChiefEditorAgent",
+      "target_id": "skill-training-wp-001",
+      "target_name": "AI Agent Skills 培训调研与大纲"
     }
   ],
   "views": [
@@ -1780,7 +1806,9 @@
         "2013",
         "3000",
         "3001",
-        "actor-explainer-wp-001"
+        "actor-explainer-wp-001",
+        "skill-training-wp-001",
+        "2050"
       ],
       "included_relationships": [
         "1176",
@@ -1791,7 +1819,8 @@
         "1266",
         "3002",
         "3003",
-        "3004"
+        "3004",
+        "skill-training-wp-assign-001"
       ]
     },
     {
