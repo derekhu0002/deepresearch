@@ -985,6 +985,11 @@
           "name": "collaborationTeam",
           "value": "EditorAgent, ResearchAgent, WriterAgent, ReviewerAgent, ReviserAgent, FactCheckerAgent, VisualizerAgent, PublisherAgent",
           "description": "ChiefEditorAgent 编排的本次工作包协作团队（Business Actor 2050-2059，Association 编排关系见 view 1764）"
+        },
+        {
+          "name": "coordinationCommit",
+          "value": "652bdfe",
+          "description": "ChiefEditorAgent 编排团队协作纠正：view 1764 Association 编排关系 ×8；docs/insights/skill-培训-AI-Agent-Skills-大纲.md 协作记录章节；tests/acceptance/test-skill-training-research.js 协作断言"
         }
       ]
     }
