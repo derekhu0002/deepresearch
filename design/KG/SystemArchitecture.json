@@ -970,6 +970,17 @@
           "Input": "docs/insights/skill-培训-AI-Agent-Skills-大纲.md（交付物）",
           "acceptanceCriteria": "tests/acceptance/test-skill-training-research.js"
         }
+      ],
+      "attributes": [
+        {
+          "name": "deliveryCommit",
+          "value": "01fddfd",
+          "description": "docs/insights/skill-培训-AI-Agent-Skills-大纲.md; tests/acceptance/test-skill-training-research.js; design/KG/SystemArchitecture.json"
+        },
+        {
+          "name": "deliveryStatus",
+          "value": "delivered"
+        }
       ]
     }
   ],
